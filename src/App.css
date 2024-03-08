@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+:root{
+  --main-clr: #ffffff;
+  --font-clr: #181818;
+  --font-light: rgb(60, 60, 60);
+  --blue: #2222ff;
+  --blue-dark: #000011;
+  --orange: #FFDD00;
+  --bg: #F3F3F3;
+  --radius: 5px;
+  --prpl: #ff33fc;
+  --orng: #ff8026;
+  --bl: #0bcaff;
+  --grn: #48ff00;
+  --div-radius: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body h1{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+body p, small, span, label{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+.h1-pages{
+  font-size: 10rem;
+  color: var(--font-clr);
+  margin: 0;
+  line-height: 0.8em;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* Buttons */
+.btn{
+  position: relative;
+  width: max-content;
+  align-self: flex-end;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5em;
+  padding: 1.5em 2em;
+  border-radius: 35px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  color: #000011;
+  text-decoration: none;
+  background: rgb(208, 208, 208);
+  font-family: 'Raleway', sans-serif;
+  white-space: nowrap;
+}
+.btn-text{
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s;
+}
+.btn:hover .btn-text{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  background: var(--blue-dark);
+  clip-path: circle(0.1% at 0 50%);
+  transition: 0.3s;
+  transform-origin: left;
+}
+.btn:hover::before{
+  clip-path: circle(71.7% at 49% 49%);
+}
+.btn-icon{
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1rem;
+}
+.btn:hover .btn-icon{
+  transform: translateX(5px);
+  color: var(--orange);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-btn{
+  position: relative;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--blue-dark);
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+.main-btn-text{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 400;
+  color: white;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s;
+}
+.main-btn:hover .main-btn-text{
+  color: var(--blue-dark);
+}
+.main-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+  background: var(--orange);
+  clip-path: circle(0% at 0 50%);
+  transition: 0.3s;
+  transform-origin: left;
+}
+.main-btn:hover::before{
+  clip-path: circle(71.7% at 50% 50%);
+}
+.main-btn-icon{
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1rem;
+  color: var(--orange);
+  opacity: 1;
+}
+.main-btn:hover .main-btn-icon{
+  color: var(--blue-dark);
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+.secondary-btn{
+  background: transparent;
+  border: 1px solid var(--font-light);
+  color: var(--font-light);
+  border-radius: 35px;
+  font-size: 1rem;
+  padding: 1em 2em;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+.secondary-btn:hover{
+  background: white;
+}
+.secondary-btn-icon{
+  transform: translateX(0px);
+  transition: transform 0.3s;
+}
+.secondary-btn:hover .secondary-btn-icon{
+  transform: translateX(5px);
+}
+
+.secondaty-titles{
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 0.8em;
+  color: var(--blue-dark);
 }
