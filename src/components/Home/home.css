@@ -1,0 +1,329 @@
+.home{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.cylinder-image-wrapper{
+    width: 3em;
+    height: 3em;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.427);
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cylinder-image-wrapper p{
+    color: white;
+    font-size: 0.7rem;
+}
+
+.home-text{
+    width: 25%;
+    position: fixed;
+    left: 4em;
+    bottom: 4em;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    user-select: none;
+}
+.home-text h1{
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+    line-height: 0.8em;
+    color: white;
+}
+.home-text p{
+    text-align: left;
+    color: white;
+}
+.home-text span{
+    color: var(--orange);
+}
+.home-text button{
+    width: max-content;
+    border: none;
+    border-radius: var(--radius);
+    color: var(--orange);
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: all 0.3s;
+}
+.home-text button:hover{
+    background: var(--blue-dark);
+    color: var(--orange);
+}
+
+
+/* Hero */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1em;
+    background: transparent;
+    overflow: hidden;
+}
+.hero-content{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 4em 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0em;
+}
+.hero h1{
+    position: relative;
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 1em;
+    color: var(--font-clr);
+}
+.hero h1 span{
+    font-style: italic;
+    font-weight: 800;
+    color: black;
+}
+.hero p{
+    width: 50%;
+    color: var(--font-clr);
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 2em 0;
+}
+.hero-content > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.hero-btn{
+    position: absolute;
+    bottom: 0;
+    right: 5em;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-chat-btn{
+    background: var(--orange);
+    aspect-ratio: 1/1;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    transition: transform 0.3s;
+}
+.hero-chat-btn:hover{
+    background: var(--orng);
+}
+
+
+.home-sections{
+    width: 100%;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: white;
+}
+.home-sections h1{
+    color: var(--blue-dark);
+    font-size: 5.5rem;
+    font-weight: 600;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.home-sections p{
+    text-transform: uppercase;
+    width: 50%;
+    color: var(--blue-dark);
+    margin-bottom: 1em;
+    transform: translateY(100px);
+    opacity: 0;
+}
+.section-1, .section-2, .section-3{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    background-size: cover;
+}
+
+/* Info */
+.info{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    padding: 4em 8em;
+}
+.info h1{
+    white-space: nowrap;
+    line-height: 1em;
+    color: var(--font-clr);
+}
+#info-do{
+    color: black;
+    font-weight: 700;
+    font-style: italic;
+}
+#info-dont{
+    color: var(--font-light);
+    font-weight: 300;
+}
+.info p{
+    color: var(--font-light);
+    width: 50%;
+    line-height: 1.5em;
+    align-self: flex-end;
+}
+.info p span{
+    color: var(--blue-dark);
+    text-decoration: underline;
+}
+
+
+
+.view-work{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+}
+
+
+.marquee-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+.marquee{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marquee-wrapper span{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--blue-dark);
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 980px){
+    .hero > div{
+        justify-content: flex-end;
+        padding:  2em 4em;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+        line-height: 1.1em;
+    }
+    .hero p{
+        width: 100%;
+    }
+
+    .info, .pre-projects{
+        padding: 2em 4em;
+        justify-content: flex-end;
+    }
+    .info h1{
+        font-size: 3rem;
+        line-height: 1em;
+        white-space: wrap;
+    }
+    .secondaty-titles{
+        font-size: 3rem;
+        line-height: 1em;
+    }
+    .info p{
+        width: 100%;
+    }
+
+    .view-work{
+        padding: 4em 1em;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marquee-wrapper span{
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .hero > div{
+        justify-content: center;
+        padding: 2em 1em;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+        line-height: 1.1em;
+    }
+    .hero p{
+        width: 100%;
+    }
+
+    .info, .pre-projects{
+        padding: 2em 1em;
+        justify-content: flex-end;
+    }
+    .info h1{
+        font-size: 3rem;
+        line-height: 1em;
+        white-space: wrap;
+    }
+    .secondaty-titles{
+        font-size: 3rem;
+        line-height: 1em;
+    }
+    .info p{
+        width: 100%;
+    }
+    .view-work{
+        padding: 4em 1em;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marquee-wrapper span{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+}

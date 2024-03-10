@@ -9,6 +9,7 @@ import './App.css'
 import useDetectDevice from './hooks/useDetectDevice'
 import useTrackScroll from './hooks/useTrackScroll'
 
+import Loading from './three/Loading/Loading'
 import Home from './components/Home/Home'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
@@ -31,13 +32,24 @@ export default function App () {
 
   // Load fonts
   useEffect(() => {
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
+    // Create a link element for preconnecting to the Google Fonts domain
+    const preconnectLink = document.createElement('link');
+    preconnectLink.rel = 'preconnect';
+    preconnectLink.href = 'https://fonts.googleapis.com';
 
+    // Create a link element for the Google Fonts stylesheet
+    const fontStylesheetLink = document.createElement('link');
+    fontStylesheetLink.href = 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap';
+    fontStylesheetLink.rel = 'stylesheet';
+
+    // Append the links to the head of the document
+    document.head.appendChild(preconnectLink);
+    document.head.appendChild(fontStylesheetLink);
+
+    // Cleanup function to remove the added links
     return () => {
-      document.head.removeChild(link);
+        document.head.removeChild(preconnectLink);
+        document.head.removeChild(fontStylesheetLink);
     };
   }, []);
 
@@ -45,7 +57,7 @@ export default function App () {
   return (
     <HelmetProvider>
     <div className="App">
-      {/* <Loading /> */}
+      <Loading />
       <BrowserRouter>
       <Suspense fallback={null}>
         <Routes>
