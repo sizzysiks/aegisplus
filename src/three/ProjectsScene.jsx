@@ -34,7 +34,7 @@ export default function ProjectsScene ({ isMobile, scrollY}){
             {/* <CameraMesh scrollY={scrollY} /> */}
             <Background scrollY={scrollY} />
             <PhysicsWorld />
-            <Cylinder isMobile={isMobile} scrollY={scrollY} />
+            <Cylinder scrollY={scrollY} />
             <Lights />
         </Canvas>
     )

@@ -14,11 +14,11 @@ export default function HomeServiceLink ({ title }){
     }
 
     const handleMouseEnter = () =>{
-        gsap.to(overlayRef.current,  { duration: 0.6, scaleX: 1, opacity: 1, ease: "expo.out" })
+        gsap.to(overlayRef.current,  { duration: 0.3, scaleX: 1, opacity: 1, ease: "expo.out" })
     }
 
     const handleMouseLeave = () =>{
-        gsap.to(overlayRef.current,  { duration: 0.6, scaleX: 0, opacity: 0, ease: "expo.in" })
+        gsap.to(overlayRef.current,  { duration: 0.3, scaleX: 0, opacity: 0, ease: "expo.in" })
     }
 
     return(

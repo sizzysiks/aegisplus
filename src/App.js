@@ -37,6 +37,10 @@ export default function App () {
     preconnectLink.rel = 'preconnect';
     preconnectLink.href = 'https://fonts.googleapis.com';
 
+    const preconnectStaticLink = document.createElement('link');
+    preconnectStaticLink.rel = 'preconnect';
+    preconnectStaticLink.href = 'https://fonts.gstatic.com';
+
     // Create a link element for the Google Fonts stylesheet
     const fontStylesheetLink = document.createElement('link');
     fontStylesheetLink.href = 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap';
