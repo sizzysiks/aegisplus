@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState, useEffect, lazy, Suspense } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
+import ReactGA from 'react-ga';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -29,6 +30,12 @@ export default function App () {
   // Hooks
   const { isMobile }= useDetectDevice();
   const { scrollY } = useTrackScroll();
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+    console.log(window.location.pathname)
+  }, []);
 
   // Load fonts
   useEffect(() => {
