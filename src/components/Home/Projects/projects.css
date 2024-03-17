@@ -11,6 +11,15 @@
 .projects-canvas-fixed{
     z-index: 10;
 }
+.projects-canvas-fixed h3{
+    position: absolute;
+    top: 4em;
+    left: 9em;
+    color: var(--font-clr);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 .project-info{
     position: absolute;
     z-index: 99;
@@ -43,6 +52,10 @@
 @media only screen and (max-width: 480px){
     .project-info h1{
         font-size: 3rem;
+    }
+    .projects-canvas-fixed h3{
+        top: 1em;
+        left: 1em;
     }
 }
 

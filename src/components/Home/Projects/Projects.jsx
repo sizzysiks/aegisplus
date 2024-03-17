@@ -19,6 +19,7 @@ export default function Projects ({ isMobile, scrollY }){
     return(
         <div className={`${isFixed ? 'projects-canvas-fixed' : 'projects-canvas'}`}>
             <ProjectsScene isMobile={isMobile} scrollY={scrollY} />
+            <h3>OUR WORK</h3>
         </div>
     )
 }

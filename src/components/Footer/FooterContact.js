@@ -19,7 +19,7 @@ export default function FooterContact (){
                     trigger: '.footer-contact-wrapper',
                     start: "top 50%",
                     end: "bottom 0%",
-                    toggleActions: "play reverse play reverse",
+                    toggleActions: "play none play reverse",
                     // markers: true // For debugging, can be removed
                 }
             }

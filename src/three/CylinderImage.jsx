@@ -35,7 +35,7 @@ const CylinderImage = ({ texture, rotation, id, geometry, isMobile, scrollY  }) 
         if(ref.current && !isMobile){
             gsap.to(materialRef.current, {duration:0.1, uColor: 1})
             gsap.to(materialRef.current, { duration: 0.5, uZoom: 0.85})
-            gsap.to(materialRef.current, {duration:0.3, uFrame:0.5})
+            // gsap.to(materialRef.current, {duration:0.3, uFrame:0.5})
         }
 
         document.body.style.cursor = 'grab'
@@ -46,7 +46,7 @@ const CylinderImage = ({ texture, rotation, id, geometry, isMobile, scrollY  }) 
         if(ref.current && !isMobile){
             gsap.to(materialRef.current, {duration:0.1, uColor: 0.1})
             gsap.to(materialRef.current, { duration: 0.5, uZoom: 1.0})
-            gsap.to(materialRef.current, {duration:0.3, uFrame:0})
+            // gsap.to(materialRef.current, {duration:0.3, uFrame:0})
         }
 
         document.body.style.cursor = 'auto'

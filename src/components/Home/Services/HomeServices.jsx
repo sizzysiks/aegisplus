@@ -8,25 +8,25 @@ import HomeServiceLink from './HomeServiceLink';
 export default function HomeServices (){
     const wrapperRef = useRef(null);
 
-    // useGSAP(() => {
-    //     gsap.fromTo(
-    //         wrapperRef.current,
-    //         { opacity: 0, y: 300 },
-    //         {
-    //             opacity: 1,
-    //             y: 0,
-    //             duration: 1,
-    //             ease: "expo.out",
-    //             scrollTrigger: {
-    //                 trigger: wrapperRef.current,
-    //                 start: "top 90%",
-    //                 end: "bottom 0%",
-    //                 toggleActions: "play reverse play reverse",
-    //                 // markers: true // For debugging, can be removed
-    //             }
-    //         }
-    //     );
-    // }, { dependencies: [] });
+    useGSAP(() => {
+        gsap.fromTo(
+            wrapperRef.current,
+            { opacity: 0, y: 300 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "expo.out",
+                scrollTrigger: {
+                    trigger: wrapperRef.current,
+                    start: "top 90%",
+                    end: "bottom 0%",
+                    toggleActions: "play reverse play reverse",
+                    // markers: true // For debugging, can be removed
+                }
+            }
+        );
+    }, { dependencies: [] });
 
     return(
         <div className="home-services" ref={wrapperRef}>
