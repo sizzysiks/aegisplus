@@ -8,35 +8,38 @@ import HomeServiceLink from './HomeServiceLink';
 export default function HomeServices (){
     const wrapperRef = useRef(null);
 
-    useGSAP(() => {
-        gsap.fromTo(
-            wrapperRef.current,
-            { opacity: 0, y: 300 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                ease: "expo.out",
-                scrollTrigger: {
-                    trigger: wrapperRef.current,
-                    start: "top 90%",
-                    end: "bottom 0%",
-                    toggleActions: "play reverse play reverse",
-                    // markers: true // For debugging, can be removed
-                }
-            }
-        );
-    }, { dependencies: [] });
+    // useGSAP(() => {
+    //     gsap.fromTo(
+    //         wrapperRef.current,
+    //         { opacity: 0, y: 300 },
+    //         {
+    //             opacity: 1,
+    //             y: 0,
+    //             duration: 1,
+    //             ease: "expo.out",
+    //             scrollTrigger: {
+    //                 trigger: wrapperRef.current,
+    //                 start: "top 90%",
+    //                 end: "bottom 0%",
+    //                 toggleActions: "play reverse play reverse",
+    //                 // markers: true // For debugging, can be removed
+    //             }
+    //         }
+    //     );
+    // }, { dependencies: [] });
 
     return(
         <div className="home-services" ref={wrapperRef}>
-            <h1>Our Web <span>Services</span></h1>
-            <p>Discover our comprehensive web services designed to <span>elevate your online presence</span> and drive success. From website design and development to e-commerce and web application solutions, Aegis has you covered. Partner with us to navigate the digital landscape and <span>achieve your online goals</span> efficiently.</p>
+            <div className="home-services-top">
+                <h1 className='page-type'>Our Web <span>Services</span></h1>
+                {/* <p>Discover our comprehensive web services designed to <span>elevate your online presence</span> and drive success. From website design and development to e-commerce and web application solutions, Aegis has you covered. Partner with us to navigate the digital landscape and <span>achieve your online goals</span> efficiently.</p> */}
+            </div>
             <div className="home-services-links">
                 {services.map( service => 
                     <HomeServiceLink 
                         key={service.id} 
                         title={service.title} 
+                        explanation={service.explanation}
                     /> 
                 )}
             </div>
@@ -47,6 +50,7 @@ export default function HomeServices (){
 const services = [
     {
         title: 'Informational Websites',
+        explanation: 'From sleek portfolios to engaging blogs, we design user-friendly platforms that captivate and inform your audience',
         desc: 'Showcase your business or organization effectively online with our informational websites. From product highlights to brand information, we create engaging digital brochures that inform and captivate your audience.',
         image: "",
         details: [
@@ -59,6 +63,7 @@ const services = [
     },
     {
         title: 'Corporate Websites',
+        explanation: `Establish credibility and professionalism with a corporate website tailored to your brand's identity`,
         desc: `Elevate your corporate identity with our tailored websites. We craft comprehensive online platforms that reflect your company's history, mission, and offerings, serving as central hubs for stakeholders, including customers, investors, and potential employees.`,
         image: "",
         details: [
@@ -72,6 +77,7 @@ const services = [
     },
     {
         title: 'E-commerce',
+        explanation: `Whether you're a budding startup or an established enterprise, we design intuitive platforms that streamline the shopping experience for your customers`,
         desc: `Drive online sales with our optimized e-commerce websites. From seamless product browsing to secure payment processing, we build intuitive online storefronts that inspire trust and facilitate transactions, whether you're a boutique shop or a global marketplace.`,
         image: "",
         details: [
@@ -84,6 +90,7 @@ const services = [
     },
     {
         title: 'Web Applications',
+        explanation: `From custom CRM systems to interactive dashboards, we develop tailored solutions that optimize efficiency and productivity`,
         desc: 'Streamline your business processes with our innovative web applications. From social media integration to real-time data processing, our solutions empower your business with enhanced functionality and seamless user experiences, unlocking your online potential.',
         image: "",
         details: [

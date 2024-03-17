@@ -193,7 +193,32 @@ footer{
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 980px){
-    
+    .footer-contact-wrapper{
+        padding: 2em;
+    }
+    .footer-contact{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .footer-contact > div p{
+        width: 100%;
+    }
+    .footer-top{
+        flex-direction: column-reverse;
+    }
+    .footer-top-links, .footer-top-contact{
+        width: 100%;
+        padding: 2em;
+    }
+    .footer-top-links > div{
+        padding: 0;
+    }
+
+    .footer-bottom{
+        padding: 2em;
+        gap: 0.5em;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 480px){

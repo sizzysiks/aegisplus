@@ -1,9 +1,10 @@
 import { useRef } from "react";
-
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import Button from "../../common/Button";
+
+import { BsArrowDown } from "react-icons/bs";
 
 export default function Info ({ scrollY }){
     const wrappeRef = useRef(null);
@@ -96,17 +97,20 @@ export default function Info ({ scrollY }){
 
     return(
         <div className="info" ref={wrappeRef}>
+            <h3 className="page-type">Get to know us</h3>
             <h1 
                 ref={h1Ref} 
                 className="secondaty-titles"
             >
-                What we <span id="info-do">DO</span> that others <br></br><span id="info-dont">Don't</span>
+                Welcome to <span id="info-do">Aegis,</span> where<br></br> digital dreams take flight✈️
             </h1>
             <p ref={pRef}>
                 We specialize in crafting distinctive online identities for businesses, ensuring your brand <span>stands out from the crowd</span>. Say goodbye to cookie-cutter websites with countless online duplicates.
             </p>
 
             <Button url="/about" label="About us" />
+
+            {/* <span id="info-arrow"><BsArrowDown /></span> */}
         </div>
     )
 }

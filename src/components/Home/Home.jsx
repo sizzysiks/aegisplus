@@ -10,6 +10,7 @@ import Info from './Info'
 import Projects from './Projects/Projects'
 import AllProjectsButton from './AllProjectsButton'
 import HomeServices from './Services/HomeServices'
+import Reviews from '../Reviews/Reviews'
 
 const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
     // Close sidebar
@@ -45,6 +46,7 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
             <div style={{ height: '650vh', width: '100%', position: 'relative', zIndex: '-2'}}></div>
             <AllProjectsButton />
             <HomeServices />
+            <Reviews />
             <Footer />
         </div>
     )

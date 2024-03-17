@@ -178,7 +178,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
     justify-content: center;
     padding: 4em 8em;
 }
@@ -186,6 +186,7 @@
     white-space: nowrap;
     line-height: 1em;
     color: var(--font-clr);
+    font-size: 3.5rem;
 }
 #info-do{
     color: black;
@@ -198,7 +199,8 @@
 }
 .info p{
     color: var(--font-light);
-    width: 50%;
+    width: 60%;
+    font-size: 1.2rem;
     line-height: 1.5em;
     align-self: flex-end;
 }
@@ -206,7 +208,20 @@
     color: var(--blue-dark);
     text-decoration: underline;
 }
-
+#info-arrow{
+    position: absolute;
+    bottom: 0;
+    font-size: 5rem;
+    animation: moveUpDown 1s infinite alternate;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px); /* Change the distance of movement as needed */
+    }
+}
 
 
 .view-work{
@@ -262,6 +277,7 @@
         font-size: 3rem;
         line-height: 1em;
         white-space: wrap;
+        width: 100%;
     }
     .secondaty-titles{
         font-size: 3rem;
