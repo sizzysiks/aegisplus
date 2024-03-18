@@ -201,11 +201,11 @@ float cnoise(vec3 P){
 
         vec2 baseUv = rotate2D(noise) * vPosition.xy;
         float pattern = lines(baseUv, 0.25 , 1.0);
-        float secondPattern = lines(baseUv, 0.05 , 1.0);
+        float secondPattern = lines(baseUv, 0.01 , 1.0);
 
-        vec3 col1 = vec3(0.91,0.6,0.92);
-        vec3 col2 = vec3(1.0,1.0,1.0);
-        vec3 col3 = vec3(0.345, 0.074, 0.927);
+        vec3 col1 = vec3(1.0,1.0,1.0);
+        vec3 col2 = vec3(0.5,0.5,0.5);
+        vec3 col3 = vec3(0.75, 0.75, 0.75);
 
         vec3 mixed = mix(col1, col3, pattern);
         vec3 final = mix(mixed, col2, secondPattern);

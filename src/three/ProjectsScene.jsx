@@ -5,6 +5,7 @@ import Cylinder from "./Cylinder"
 import Lights from "./Lights"
 import Background from "./Background"
 import PhysicsWorld from "./PhysicsWorld"
+import GradientMesh from "./GradientMesh"
  
 THREE.ColorManagement.legacyMode = false
 
@@ -28,11 +29,12 @@ export default function ProjectsScene ({ isMobile, scrollY}){
     return(
         <Canvas 
             // gl={{ alpha: false }} 
-            camera={{ rotation: [0, 0, isMobile? Math.PI/2.5: 0.1], position: [0, 0, isMobile? 5: 4.85] }}
+            camera={{ rotation: [0, 0, isMobile? 0.1: 0.1], position: [0, 0, isMobile? 4.85: 4.85] }}
             onCreated={(state) => (state.gl.toneMappingExposure = 1.3)}
         >
             {/* <CameraMesh scrollY={scrollY} /> */}
             <Background scrollY={scrollY} />
+            {/* <GradientMesh /> */}
             <PhysicsWorld />
             <Cylinder scrollY={scrollY} />
             <Lights />

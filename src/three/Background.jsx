@@ -24,6 +24,8 @@ export default function Background ({ scrollY }){
             gsap.to(materialRef.current.color, { r: 0.8, g: 0, b: 0.9, duration: 0.5 });
         } else if(scrollY > 6.7 && scrollY <= 8){
             gsap.to(materialRef.current.color, { r: 0.01, g: 0, b: 0.1, duration: 0.5 });
+        } else if(scrollY > 8){
+            gsap.to(materialRef.current.color, { r: 0.9, g: 0.9, b: 0.9, duration: 0.5 });
         }
     }, { dependencies: [scrollY] })
     

@@ -1,6 +1,6 @@
 :root{
   --main-clr: #ffffff;
-  --font-clr: #181818;
+  --font-clr: #070707;
   --font-light: rgb(60, 60, 60);
   --blue: #2222ff;
   --blue-dark: #000011;
@@ -24,6 +24,7 @@ html, body{
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  font-smooth: auto;
 }
 body{
   overflow-x: hidden;
@@ -78,7 +79,7 @@ body p, small, span, label{
   gap: 0.5em;
   padding: 1.5em 2em;
   border-radius: 35px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border: none;
   cursor: pointer;
   color: #000011;
@@ -135,6 +136,7 @@ body p, small, span, label{
   text-decoration: none;
   padding: 1em 2em;
   border-radius: 35px;
+  font-size: 0.8rem;
   border: none;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
