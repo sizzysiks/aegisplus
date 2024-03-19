@@ -110,6 +110,7 @@
     font-size: 1rem;
     line-height: 1.5em;
     margin: 2em 0;
+    font-weight: 400;
     text-align: center;
 }
 .hero-content > div{
@@ -188,8 +189,9 @@
 .info h1{
     white-space: nowrap;
     line-height: 1em;
-    color: var(--font-clr);
+    color: black;
     font-size: 3.5rem;
+    font-weight: 400;
 }
 #info-do{
     color: black;

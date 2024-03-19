@@ -5,7 +5,6 @@ import Cylinder from "./Cylinder"
 import Lights from "./Lights"
 import Background from "./Background"
 import PhysicsWorld from "./PhysicsWorld"
-import GradientMesh from "./GradientMesh"
  
 THREE.ColorManagement.legacyMode = false
 
