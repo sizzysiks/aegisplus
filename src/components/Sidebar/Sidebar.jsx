@@ -4,44 +4,45 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import './sidebar.css'
 
+import SidebarLink from './SidebarLink'
 
 const Sidebar = () =>{
     // Refs for links
-    const ref1 = useRef()
-    const ref2 = useRef()
-    const ref3 = useRef()
-    const ref4 = useRef()
-    const ref5 = useRef()
+    const socialsRef = useRef()
 
     // Animate links on render
     useGSAP(()=>{
-        gsap.fromTo(ref1.current, {x: window.innerWidth}, {duration: 0.5, x:0, ease: "expo.out"})
-        gsap.fromTo(ref2.current, {x: window.innerWidth}, {delay:0.03, duration: 1, x:0, ease: "expo.out"})
-        gsap.fromTo(ref3.current, {x: window.innerWidth}, {delay:0.06, duration: 1, x:0, ease: "expo.out"})
-        gsap.fromTo(ref4.current, {x: window.innerWidth}, {delay:0.09, duration: 1, x:0, ease: "expo.out"})
-        gsap.fromTo(ref5.current, {x: window.innerWidth}, {delay:0.12, duration: 1, x:0, ease: "expo.out"})
+        gsap.fromTo(socialsRef.current, {x: window.innerWidth}, {delay:0.12, duration: 1, x:0, ease: "expo.out"})
     }, { dependencies: [] })
 
     return(
         <div className="sidebar">
-            <Link to="/contact" className='sidebar-link' id='link-2' ref={ref2}><p className='sidebar-link-p'>Contact</p></Link>
-            <Link to="/about" className='sidebar-link' id='link-3' ref={ref3}><p className='sidebar-link-p'>About</p></Link>
-            <Link to="/projects" className='sidebar-link' id='link-4' ref={ref4}><p className='sidebar-link-p'>Work</p></Link>
+            <div className="sidebar-links">
+                <SidebarLink route="/" label="Home" duration={0.5} delay={0} />
+                <SidebarLink route="/projects" label="Work" duration={1} delay={0.03} />
+                <SidebarLink route="/about" label="About" duration={1} delay={0.06} />
+                <SidebarLink route="/contact" label="Contact" duration={1} delay={0.09} />
+            </div>
             
-            <div className='sidebar-socials' id='link-5' ref={ref5}>
+            <div className='sidebar-socials' id='link-5' ref={socialsRef}>
+                <p>82a James Carter Rd, Mildenhall</p>
                 <p>+44 7498509537</p>
-                <p>info@aegis.plus</p>
+
                 <div>
                     <a 
-                        className='footer-top-link footer-bottom-link' 
+                        className='sidebar-socials-link' 
                         href="https://www.instagram.com/aegisimmersive/" 
                         target="_blank"
                         rel="noreferrer"
                     >
                         INSTAGRAM
                     </a>
-                    <Link to="#" className='footer-top-link'>X</Link>
+                    <Link to="#" className='sidebar-socials-link'>X</Link>
                 </div>
+
+                <Link to="#" className='sidebar-socials-link' onClick={() => window.location.href='mailto:info@aegis.plus'}>
+                    info@aegis.plus
+                </Link>
             </div>
         </div>
     )

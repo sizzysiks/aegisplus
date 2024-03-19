@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState, useEffect, lazy, Suspense } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
-import ReactGA from 'react-ga';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -19,6 +18,7 @@ const About = lazy(() => import('./components/About/About'));
 const Projects = lazy(() => import('./components/Projects/Projects'));
 const Project = lazy(() => import('./components/Projects/Project'));
 const Contact = lazy(() => import('./components/Contact/Contact'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Register ScrollTrigger on gsap
 gsap.registerPlugin(ScrollTrigger);
@@ -30,12 +30,6 @@ export default function App () {
   // Hooks
   const { isMobile }= useDetectDevice();
   const { scrollY } = useTrackScroll();
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-
-    console.log(window.location.pathname)
-  }, []);
 
   // Load fonts
   useEffect(() => {
@@ -87,6 +81,7 @@ export default function App () {
           <Route path='/contact' element={<Contact sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} />} />
           <Route path='/terms' element={<Terms sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} />} />
           <Route path='/privacy' element={<Privacy sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
         </Suspense>
       </BrowserRouter>

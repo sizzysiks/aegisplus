@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_02_antino_portfolio_2022=self.webpackChunk_02_antino_portfolio_2022||[]).push([[805],{9805:function(n,o,e){e.r(o),e.d(o,{default:function(){return i}});var s=e(1087),t=e(184);function i(){return(0,t.jsxs)("div",{className:"not-found",children:[(0,t.jsx)("h1",{children:"Ooops, this page doesn't exist"}),(0,t.jsxs)("p",{children:["Let's go back ",(0,t.jsx)(s.rU,{to:"/",children:"home"})]})]})}}}]);
+//# sourceMappingURL=805.9a10bb66.chunk.js.map

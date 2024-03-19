@@ -6,8 +6,7 @@ import {IoIosCheckmarkCircle} from 'react-icons/io'
 
 const baseUrl = "http://localhost:3001/api/email"
 
-const ContactForm = () =>
-{    
+const ContactForm = () =>{    
     // State for input & icons
     const [name, setName] = useState("")
     const [surname, setSurname] = useState("")
@@ -23,23 +22,25 @@ const ContactForm = () =>
     const handleSubmit = async (e) =>{
         e.preventDefault()
 
-        const data = { 
-            name: name[0].toUpperCase() + name.substring(1) + " " + surname[0].toUpperCase() + surname.substring(1), 
-            email, 
-            content 
-        }
+        console.log(name, email, content)
 
-        try {
-            axios.post(baseUrl, data)
+        // const data = { 
+        //     name: name[0].toUpperCase() + name.substring(1) + " " + surname[0].toUpperCase() + surname.substring(1), 
+        //     email, 
+        //     content 
+        // }
+
+        // try {
+        //     await axios.post(baseUrl, data)
             
-            setEmailSent(true)
-            setName("")
-            setSurname("")
-            setEmail("")
-            setContent("")
-        } catch (error) {
-            console.log(error)
-        }
+        //     setEmailSent(true)
+        //     setName("")
+        //     setSurname("")
+        //     setEmail("")
+        //     setContent("")
+        // } catch (error) {
+        //     console.log(error)
+        // }
 
     }
 

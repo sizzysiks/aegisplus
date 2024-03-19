@@ -1,14 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import App from './App'
 
-function initializeReactGA() {
-  ReactGA.initialize('G-E1DVFKRBKC');
-  ReactGA.pageview(window.location.pathname + window.location.search);
-}
-
-initializeReactGA();
+ReactGA.initialize('G-E1DVFKRBKC');
+ReactGA.send({ 
+  hitType: "pageview", 
+  page: window.location.pathname
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -47,7 +47,9 @@ const Footer = () =>{
                         Instagram
                     </a>
                     <Link to="#" className='footer-top-link footer-bottom-link'>X</Link>
-                    <p className='footer-bottom-email'>info@aegis.plus</p>
+                    <Link to="#" className='footer-top-link footer-bottom-link' onClick={() => window.location.href='mailto:info@aegis.plus'}>
+                        info@aegis.plus
+                    </Link>
                 </div>
             </div>
         </footer>
