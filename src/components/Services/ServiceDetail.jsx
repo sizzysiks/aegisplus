@@ -20,7 +20,7 @@ export default function ServiceDetail ({ detail, wrapperRef }){
                     trigger: wrapperRef.current,
                     start: "top 60%",
                     end: "bottom 20%",
-                    toggleActions: "play reverse play reverse",
+                    toggleActions: "play none play reverse",
                 }
             }
         );

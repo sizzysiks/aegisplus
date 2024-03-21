@@ -23,7 +23,7 @@ export default function Service ({ service }){
                     trigger: wrapperRef.current,
                     start: "top 80%",
                     end: "bottom 20%",
-                    toggleActions: "play reverse play reverse",
+                    toggleActions: "play none play reverse",
                 }
             }
         );
@@ -40,7 +40,7 @@ export default function Service ({ service }){
                     trigger: wrapperRef.current,
                     start: "top 75%",
                     end: "bottom 20%",
-                    toggleActions: "play reverse play reverse",
+                    toggleActions: "play none play reverse",
                 }
             }
         );
