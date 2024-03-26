@@ -43,7 +43,7 @@ const Cylinder = ({ isMobile, scrollY }) =>{
             <CylinderImage texture={textures[0]} rotation={[0, offset * 0, 0]} id="map" geometry={geometry} isMobile={isMobile} scrollY={scrollY} />
             <CylinderImage texture={textures[1]} rotation={[0, offset * 1, 0]} id="owners" geometry={geometry} isMobile={isMobile} scrollY={scrollY} />
             <CylinderImage texture={textures[4]} rotation={[0, offset * 2, 0]} id="antino" geometry={geometry} isMobile={isMobile} scrollY={scrollY} />
-            <CylinderImage texture={textures[2]} rotation={[0, offset * 3, 0]} id="juubix" geometry={geometry} isMobile={isMobile} scrollY={scrollY} />
+            <CylinderImage texture={textures[2]} rotation={[0, offset * 3, 0]} id="anila" geometry={geometry} isMobile={isMobile} scrollY={scrollY} />
             <CylinderImage texture={textures[3]} rotation={[0, offset * 4, 0]} id="retail" geometry={geometry} isMobile={isMobile} scrollY={scrollY} />
         </group>
     )

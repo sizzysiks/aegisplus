@@ -141,16 +141,16 @@ const data = [
     identifier: '3d-customizer',
     id: 5
   },
-  {
-    title: "JUUBIX",
-    sub: "Mini game",
-    desc: "JUUBIX supplies ‘Stakeholders as a Service’ (SaaS) by providing a new collaborative marketplace for talent, companies, and investors.",
-    technologies: 'React, Next.js, React-Three, Three.js',
-    date: 'Ongoing',
-    url: 'juubix',
-    identifier: 'juubix',
-    id: 6
-  },
+  // {
+  //   title: "JUUBIX",
+  //   sub: "Mini game",
+  //   desc: "JUUBIX supplies ‘Stakeholders as a Service’ (SaaS) by providing a new collaborative marketplace for talent, companies, and investors.",
+  //   technologies: 'React, Next.js, React-Three, Three.js',
+  //   date: 'Ongoing',
+  //   url: 'juubix',
+  //   identifier: 'juubix',
+  //   id: 6
+  // },
   {
     title: "Stockbet",
     sub: "Betting tips website",
@@ -159,7 +159,7 @@ const data = [
     date: 'Ongoing',
     url: 'stockbet',
     identifier: 'stockbet',
-    id: 7
+    id: 6
   },
   {
     title: "Groundrock",
@@ -169,7 +169,7 @@ const data = [
     date: '2020',
     url: 'groundrock',
     identifier: 'groundrock',
-    id: 8
+    id: 7
   },
   {
     title: "Antino",
@@ -179,6 +179,6 @@ const data = [
     date: '2022',
     url: 'antino',
     identifier: 'antino',
-    id: 9
+    id: 8
   }
 ]

@@ -10,7 +10,8 @@ import Info from './Info'
 import Projects from './Projects/Projects'
 import AllProjectsButton from './AllProjectsButton'
 import HomeServices from './Services/HomeServices'
-import Reviews from '../Reviews/Reviews'
+import Reviews from '../reviews/Reviews'
+import Faqs from '../Faqs/Faqs'
 
 const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
     // Close sidebar
@@ -47,7 +48,25 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
             <AllProjectsButton />
             <HomeServices />
             <Reviews />
+            {/* <Faqs /> */}
             <Footer />
+
+            {/* <div className="test">
+                <div className="test-content">
+                    <div className="test-desc">
+                        <div className="test-desc-top">
+                            <span>02</span>
+                            <span>#WebGL #Web #3d</span>
+                        </div>
+                        <h1>Juubix</h1>
+                        <small>JUUBIX supplies ‘Stakeholders as a Service’ (SaaS) by providing a new collaborative marketplace for talent, companies, and investors</small>
+                    </div>
+
+                    <div className="test-img">
+                        <img src={testimg} alt="" />
+                    </div>
+                </div>
+            </div> */}
         </div>
     )
 }

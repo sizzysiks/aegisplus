@@ -1,29 +1,29 @@
-import { useRef } from 'react';
+import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from "@gsap/react";
 import './reviews.css'
 
-import img from '../../assets/review.webp'
+import img1 from '../../assets/reviews/review1.png'
+import img2 from '../../assets/reviews/review2.png'
 
 export default function Reviews (){
     const wrapperRef = useRef(null);
-    const titleRef = useRef(null);
-    const textRef = useRef(null);
-    const imgRef = useRef(null);
+    const ref1 = useRef(null);
+    const ref2 = useRef(null);
 
     useGSAP(() => {
         gsap.fromTo(
-            titleRef.current,
-            { opacity: 0, y: 100 },
+            ref1.current,
+            { rotateZ: '-20deg' },
             {
-                opacity: 1,
-                y: 0,
+                rotateZ: '0deg',
                 duration: 0.8,
                 ease: "expo.out",
                 scrollTrigger: {
-                    trigger: wrapperRef.current,
-                    start: "top 50%",
+                    trigger: ref1.current,
+                    start: "top 80%",
                     end: "bottom 0%",
+                    scrub: true,
                     toggleActions: "play none play reverse",
                     // markers: true // For debugging, can be removed
                 }
@@ -31,40 +31,22 @@ export default function Reviews (){
         );
 
         gsap.fromTo(
-            textRef.current,
-            { opacity: 0, y: 100 },
+            ref2.current,
+            { rotateZ: '20deg' },
             {
-                opacity: 1,
-                y: 0,
+                rotateZ: '0deg',
                 duration: 1,
                 ease: "expo.out",
                 scrollTrigger: {
-                    trigger: wrapperRef.current,
-                    start: "top 50%",
+                    trigger: ref2.current,
+                    start: "top 90%",
                     end: "bottom 0%",
+                    scrub: true,
                     toggleActions: "play none play reverse",
                     // markers: true // For debugging, can be removed
                 }
             }
-        );
-
-        gsap.fromTo(
-            imgRef.current,
-            { opacity: 0, clipPath: 'polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%)' },
-            {
-                opacity: 1,
-                clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-                duration: 2,
-                ease: "expo.out",
-                scrollTrigger: {
-                    trigger: wrapperRef.current,
-                    start: "top 80%",
-                    end: "bottom bottom",
-                    toggleActions: "play none play reverse",
-                    // markers: true // For debugging, can be removed
-                }
-            }
-        );
+        );  
     }, { dependencies: [] });
 
     return(
@@ -73,20 +55,26 @@ export default function Reviews (){
                 <h1 className='page-type'>Happy clients</h1>
             </div>
 
-            <div className="reviews-content-wrapper">
-                <div className="reviews-content">
-                    <div>
-                        <h3 ref={titleRef} className="quote-text">"Turned our vision into reality with finesse and expertise!"</h3>
-                        <small>- Emily S.</small>
+            <div className="reviews-cards">
+                <div className="card" ref={ref1}>
+                    <div className="card-top">
+                        <div className="card-img"><img src={img1} alt="" /></div>
                     </div>
-                    <p ref={textRef}>Explore what our clients have to say about their experiences working with Aegis+. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
-                    {/* <button className='secondary-btn'>View our reviews <FaLongArrowAltRight /></button> */}
+                    <p>Aida V. <span>CEO, Happy.al</span></p>
+                    <small>Their team's creativity and attention to detail brought our vision to life seamlessly. The website they designed exceeded our expectations, and our online presence has never been stronger. Thank you for your professionalism and dedication to our project.</small>
                 </div>
 
-                <div ref={imgRef} className="reviews-img">
-                    <img src={img} alt="" />
+                <div className="card" ref={ref2}>
+                    <div className="card-top">
+                        <div className="card-img"><img src={img2} alt="" /></div>
+                    </div>
+                    <p>Antino K. <span>Owner, antino.net</span></p>
+                    <small>From the initial consultation to the final launch, they were responsive, collaborative, and committed to delivering a site that truly reflects our brand. We've received countless compliments on the design and functionality, and our online traffic has increased greatly!</small>
                 </div>
             </div>
+
+            <p>Explore what our clients have to say about their experiences working with Aegis+. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
+            <button className='main-btn'>Read all our reviews</button>
         </div>
     )
 }

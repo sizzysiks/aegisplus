@@ -1,135 +1,105 @@
 .reviews{
     width: 100%;
-    padding: 4em 0;
+    padding: 4em 8em;
     display: flex;
     flex-direction: column;
     gap: 2em;
     background: var(--bg);
 }
-
-
-.reviews-top{
-    padding: 0 8em;
-}
-
-.reviews-content-wrapper{
-    display: flex;
-}
-.reviews-content{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    padding: 0 2em 0 8em;
-}
-.reviews-content > div{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-.reviews-content > div h3{
+.reviews h2{
     font-weight: 500;
     font-size: 3rem;
     color: black;
     line-height: 1em;
     margin: 0;
 }
-.reviews-content > div small{
+.reviews p{
     font-size: 1.5rem;
-    color: rgb(40, 40, 40);
+    color: var(--font-light);
+    width: 100%;
 }
-.reviews-content p{
-    color: rgb(40, 40, 40);
-    font-size: 1.5rem;
-}
-.reviews-content button{
-    width: max-content;
-    background: orange;
-    color: black;
-    border: none;
+.reviews p span{
     font-size: 1rem;
-    padding: 1em 2em;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+
+.reviews-cards{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+.card{
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    border-radius: 10px;
+    background: rgb(228, 228, 228);
+}
+.card:nth-child(1){
+    background: var(--orng);
+}
+.card:nth-child(2){
+    background: var(--blue);
+}
+.card-top{
     display: flex;
     align-items: center;
     gap: 1em;
 }
-
-
-.reviews-img{
-    width: 50%;
-    height: 100%;
+.card-img{
+    width: 100%;
+    height: 300px;
     overflow: hidden;
-    clip-path:polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+    border-radius: 10px;
 }
-.reviews-img img{
+.card-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.rating img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card p{
+    font-size: 1.5rem;
+    color: white;
+}
+.card:nth-child(2) p, .card:nth-child(2) small{
+    color: white;
+}
+.card small{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 980px){
-    .reviews{
-        flex-direction: column;
-        height: max-content;
-    }
-
-    .reviews-top{
-        padding: 0 2em;
-    }
-
-    .reviews-content-wrapper{
-        flex-direction: column;
-        gap: 2em;
-    }
-    .reviews-content{
-        width: 100%;
-        padding: 2em;
-    }
-    .reviews-content > div h3{
-        font-size: 2.5rem;
-    }
-    .reviews-content p{
-        font-size: 1rem;
-    }
-    .reviews-img{
-        width: 100%;
-        height: 50vh;
-    }
-    .reviews-img img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    
 }
 
 @media only screen and (max-width: 480px){
     .reviews{
         flex-direction: column;
         height: max-content;
+        padding: 4em 1em;
     }
-
-    .reviews-top{
-        padding: 0 1em;
+    .reviews p{
+        width: 100%;
+        font-size: 1.2rem;
     }
-
-    .reviews-content-wrapper{
+    .reviews-cards{
         flex-direction: column;
-        gap: 2em;
     }
-    .reviews-content{
+    .card{
         width: 100%;
-        padding: 1em;
-    }
-    .reviews-content > div h3{
-        font-size: 2.5rem;
-    }
-    .reviews-content p{
-        font-size: 1rem;
-    }
-    .reviews-img{
-        width: 100%;
-        height: 50vh;
     }
 }
 

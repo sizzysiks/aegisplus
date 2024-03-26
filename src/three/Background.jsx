@@ -17,7 +17,7 @@ export default function Background ({ scrollY }){
         } else if(scrollY > 2.7 && scrollY <= 3.7){
             gsap.to(materialRef.current.color, { r: 1, g: 1, b: 1, duration: 0.5 });
         } else if(scrollY > 3.7 && scrollY <= 4.7){
-            gsap.to(materialRef.current.color, { r: 0, g: 0, b: 0.1, duration: 0.5 });
+            gsap.to(materialRef.current.color, { r: 0.01, g: 0.01, b: 0, duration: 0.5 });
         } else if(scrollY > 4.7 && scrollY <= 5.7){
             gsap.to(materialRef.current.color, { r: 0.0, g: 0, b: 0.01, duration: 0.5 });
         } else if(scrollY > 5.7 && scrollY <= 6.7){
