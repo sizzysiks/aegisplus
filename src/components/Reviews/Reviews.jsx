@@ -3,8 +3,8 @@ import gsap from 'gsap'
 import { useGSAP } from "@gsap/react";
 import './reviews.css'
 
-import img1 from '../../assets/reviews/review1.png'
-import img2 from '../../assets/reviews/review2.png'
+import img1 from '../../assets/reviews/review1.webp'
+import img2 from '../../assets/reviews/review2.webp'
 
 export default function Reviews (){
     const wrapperRef = useRef(null);
@@ -17,7 +17,6 @@ export default function Reviews (){
             { rotateZ: '-20deg' },
             {
                 rotateZ: '0deg',
-                duration: 0.8,
                 ease: "expo.out",
                 scrollTrigger: {
                     trigger: ref1.current,
@@ -35,7 +34,6 @@ export default function Reviews (){
             { rotateZ: '20deg' },
             {
                 rotateZ: '0deg',
-                duration: 1,
                 ease: "expo.out",
                 scrollTrigger: {
                     trigger: ref2.current,
@@ -57,14 +55,16 @@ export default function Reviews (){
 
             <div className="reviews-cards">
                 <div className="card" ref={ref1}>
+                    <span className='pin'></span>
                     <div className="card-top">
                         <div className="card-img"><img src={img1} alt="" /></div>
                     </div>
-                    <p>Aida V. <span>CEO, Happy.al</span></p>
+                    <p>Aida V. <span>CEO, OnSolutions</span></p>
                     <small>Their team's creativity and attention to detail brought our vision to life seamlessly. The website they designed exceeded our expectations, and our online presence has never been stronger. Thank you for your professionalism and dedication to our project.</small>
                 </div>
 
                 <div className="card" ref={ref2}>
+                    <span className='pin'></span>
                     <div className="card-top">
                         <div className="card-img"><img src={img2} alt="" /></div>
                     </div>
@@ -74,7 +74,6 @@ export default function Reviews (){
             </div>
 
             <p>Explore what our clients have to say about their experiences working with Aegis+. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
-            <button className='main-btn'>Read all our reviews</button>
         </div>
     )
 }

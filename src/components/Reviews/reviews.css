@@ -14,7 +14,8 @@
     margin: 0;
 }
 .reviews p{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5em;
     color: var(--font-light);
     width: 100%;
 }
@@ -45,6 +46,15 @@
 }
 .card:nth-child(2){
     background: var(--blue);
+}
+.pin{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--bg);
 }
 .card-top{
     display: flex;
@@ -82,7 +92,21 @@
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 980px){
-    
+    .reviews{
+        flex-direction: column;
+        height: max-content;
+        padding: 4em 2em;
+    }
+    .reviews p{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    /* .reviews-cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    } */
 }
 
 @media only screen and (max-width: 480px){

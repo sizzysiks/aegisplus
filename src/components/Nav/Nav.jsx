@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import './nav.css'
 
-import logo from '../../assets/logo.webp'
+import logo from '../../assets/logo-clr.webp'
 
 import NavSidebarButton from './NavSidebarButton'
 

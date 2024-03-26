@@ -17,8 +17,9 @@ export default function FooterContact (){
                 ease: "expo.out",
                 scrollTrigger: {
                     trigger: '.footer-contact-wrapper',
-                    start: "top 50%",
+                    start: "top 80%",
                     end: "bottom 0%",
+                    scrub: true,
                     toggleActions: "play none play reverse",
                     // markers: true // For debugging, can be removed
                 }
@@ -35,8 +36,9 @@ export default function FooterContact (){
                 ease: "expo.out",
                 scrollTrigger: {
                     trigger: '.footer-contact-wrapper',
-                    start: "top 50%",
+                    start: "top 80%",
                     end: "bottom 0%",
+                    scrub: true,
                     toggleActions: "play reverse play reverse",
                     // markers: true // For debugging, can be removed
                 }

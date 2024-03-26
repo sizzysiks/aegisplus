@@ -8,6 +8,7 @@ import Nav from '../Nav/Nav'
 import Sidebar from '../Sidebar/Sidebar'
 import Footer from '../Footer/Footer'
 import Services from '../Services/Services'
+import Faqs from '../Faqs/Faqs'
 
 const About = ({sidebarIsOpen, setSidebarIsOpen}) =>{
     const overlayRef = useRef()
@@ -68,7 +69,7 @@ const About = ({sidebarIsOpen, setSidebarIsOpen}) =>{
                     <p>With every website we create, we automatically submit it for consideration in prestigious international awards that highlight outstanding achievements in web design and development.</p>
                 </div>
             </div>
-
+            <Faqs />
             <Footer />
         </div>
     )

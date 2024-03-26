@@ -48,7 +48,7 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
             <AllProjectsButton />
             <HomeServices />
             <Reviews />
-            {/* <Faqs /> */}
+            <Faqs />
             <Footer />
 
             {/* <div className="test">

@@ -1,6 +1,5 @@
 .faqs{
     width: 100%;
-    height: 100vh;
     background: var(--bg);
     padding: 4em 8em;
     display: flex;
@@ -13,18 +12,79 @@
     flex-direction: column;
     gap: 1em;
 }
-.faqs-container > div{
+.faq{
     background: rgb(241, 241, 241);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1em;
     border-radius: var(--radius);
-    padding: 1em;
+    padding: 1em 2em;
+    cursor: pointer;
 }
-.faqs-container > div span{
+.faq button{
+    position: relative;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+.plus-line, .plus-line-hidden{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--font-clr);
+    border-radius: 25px;
+    transition: transform 0.2s;
+}
+.plus-line-hidden{
+    transform: translateY(-50%) rotateZ(90deg);
+}
+
+.faq > div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.faq > div p{
     color: var(--font-clr);
+    font-weight: 500;
     font-size: 1.2rem;
 }
-.faqs-container > div p{
-    color: var(--font-clr);
+.faq > div small{
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 980px){
+    .faqs{
+        padding: 4em 2em;
+    }
+    .faq button{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .faqs{
+        padding: 4em 1em;
+    }
+    .faq{
+        padding: 1em;
+    }
+    .faq button{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
 }
