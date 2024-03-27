@@ -251,5 +251,33 @@ footer{
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .footer-top-link{
+        font-size: 1.8rem;
+    }
+    .footer-top-contact p{
+        font-size: 2.5rem;
+    }
+    .footer-top-contact-input{
+        font-size: 1.5rem;
+    }
+    .footer-top-contact-input input{
+        font-size: 1.5rem;
+    }
+    .footer-top-contact-input-btn{
+        font-size: 1.5rem;
+    }
+
+    .footer-copyright p{
+        font-size: 1.2rem;
+    }
+    .footer-socials-p{
+        font-size: 1.2rem;
+    }
+
+    .footer-contact > div h2{
+        font-size: 2rem;
+    }
+    .footer-contact > div p{
+        font-size: 1.5rem;
+    }
 }

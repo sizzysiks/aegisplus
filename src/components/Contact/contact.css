@@ -190,3 +190,8 @@
         font-size: 1.5rem;
     }
 }
+@media screen and (min-width: 1440px) {
+    .contact{
+        padding-top: 16em;
+    }
+}

@@ -215,3 +215,17 @@ body p, small, span, label{
   line-height: 0.8em;
   color: var(--blue-dark);
 }
+
+
+@media only screen and (max-width: 480px){
+
+}
+
+@media screen and (min-width: 1440px) {
+  .btn, .main-btn, .secondary-btn{
+    font-size: 1.2rem;
+  }
+  .page-type{
+    font-size: 1.5rem;
+  }
+}

@@ -189,5 +189,21 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .home-services{
+        padding: 8em 0;
+    }
+    .home-service-link-content > div{
+        gap: 2em;
+    }
+    .home-service-link-p{
+        font-size: 3.5rem;
+    }
+    .home-service-link-small{
+        font-size: 1.5rem;
+    }
+    .home-service-link-btn{
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
 }

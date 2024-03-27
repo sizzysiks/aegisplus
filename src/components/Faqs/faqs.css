@@ -12,7 +12,7 @@
     flex-direction: column;
     gap: 1em;
 }
-.faq{
+.faq, .faq-active{
     background: rgb(241, 241, 241);
     display: flex;
     align-items: flex-start;
@@ -21,7 +21,10 @@
     padding: 1em 2em;
     cursor: pointer;
 }
-.faq button{
+.faq-active{
+    background: rgb(222, 222, 222);
+}
+.faq button, .faq-active button{
     position: relative;
     font-size: 1.5rem;
     background: transparent;
@@ -46,19 +49,19 @@
     transform: translateY(-50%) rotateZ(90deg);
 }
 
-.faq > div{
+.faq > div, .faq-active > div{
     width: 90%;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.faq > div p{
+.faq > div p, .faq-active > div p{
     color: var(--font-clr);
     font-weight: 500;
     font-size: 1.2rem;
 }
-.faq > div small{
-    font-size: 0.9rem;
+.faq > div small, .faq-active > div small{
+    font-size: 1rem;
     line-height: 1.5em;
 }
 
@@ -86,5 +89,16 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .faqs{
+        padding: 8em;
+    }
+    .faq{
+        padding: 2em;
+    }
+    .faq > div p, .faq-active > div p{
+        font-size: 2rem;
+    }
+    .faq > div small, .faq-active > div small{
+        font-size: 1.5rem;
+    }
 }

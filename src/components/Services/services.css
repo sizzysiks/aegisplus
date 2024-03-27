@@ -86,5 +86,14 @@
 }
 
 @media screen and (min-width: 1440px) {
-
+    .service-wrapper{
+        flex: 0.5;
+        min-width: 40%;
+    }
+    .service-content small{
+        font-size: 1.8rem;
+    }
+    .service-content-details li{
+        font-size: 1.5rem;
+    }
 }

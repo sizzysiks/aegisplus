@@ -141,3 +141,11 @@
         display: none;
     }
 }
+@media screen and (min-width: 1440px) {
+    .logo{
+        width: 3em;
+    }
+    .nav-btn{
+        font-size: 1.5rem;
+    }
+}

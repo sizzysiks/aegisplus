@@ -403,5 +403,17 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .hero-content{
+        padding: 8em;
+    }
+    .hero h1{
+        font-size: 6rem;
+    }
+    .hero p{
+        font-size: 1.5rem;
+    }
+
+    .info p{
+        font-size: 1.5rem;
+    }
 }

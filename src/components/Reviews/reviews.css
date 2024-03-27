@@ -128,5 +128,22 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .reviews{
+        padding: 8em;
+    }
+    .reviews p{
+        font-size: 2rem;
+    }
+    .card-img{
+        height: 500px;
+    }
+    .card p{
+        font-size: 2.5rem;
+    }
+    .card p span{
+        font-size: 1.5rem;
+    }
+    .card small{
+        font-size: 1.5rem;
+    }
 }

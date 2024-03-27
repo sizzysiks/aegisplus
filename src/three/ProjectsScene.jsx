@@ -41,9 +41,10 @@ export default function ProjectsScene ({ isMobile, scrollY}){
 
             <Environment resolution={256}>
                 <group rotation={[0, 0, 0]}>
-                    <Lightformer form="circle" intensity={2} rotation-y={Math.PI / 2} position={[-5, 1, -1]} scale={2} />
-                    <Lightformer form="circle" intensity={2} rotation-y={Math.PI / 2} position={[-5, -1, -1]} scale={2} />
-                    <Lightformer form="circle" intensity={2} rotation-y={-Math.PI / 2} position={[10, 1, 0]} scale={8} />
+                    <Lightformer form="circle" intensity={2} position={[-5, 1, 5]} scale={1} />
+                    <Lightformer form="circle" intensity={2} position={[5, 1, 5]} scale={1} />
+                    {/* <Lightformer form="circle" intensity={2} rotation-y={Math.PI / 2} position={[-5, -1, -1]} scale={2} />
+                    <Lightformer form="circle" intensity={2} rotation-y={-Math.PI / 2} position={[10, 1, 0]} scale={8} /> */}
                 </group>
             </Environment>
         </Canvas>

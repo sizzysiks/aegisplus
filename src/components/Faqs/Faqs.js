@@ -1,25 +1,10 @@
 import { useState } from 'react';
 import './faqs.css'
 
-function Faq ({ title, text, id, activeFaq, setActiveFaq }){
-    return(
-        <div className='faq' onClick={()=>{ setActiveFaq(id) }}>
-            <button>
-                <div className='plus-line'></div>
-                <div className={`${activeFaq === id? "plus-line": "plus-line-hidden"}`}></div>
-            </button>
-            <div>
-                <p>{title}</p>
-                {activeFaq === id? 
-                <small>{text}</small>
-                : ""}
-            </div>
-        </div>
-    )
-}
+import Faq from './Faq';
 
 export default function Faqs (){
-    const [activeFaq, setActiveFaq] = useState(1);
+    const [activeFaq, setActiveFaq] = useState(0);
 
     return(
         <section className="faqs">
@@ -40,7 +25,7 @@ const faqs = [
     },
     {
         title: `Why is branding and good design important for a business?`,
-        text: `Effective branding and design are essential for establishing a distinct identity and fostering trust among customers. They communicate a cohesive message about a company's values and offerings, forging emotional connections with the audience. Good design enhances user experience, positively impacting customer perception and loyalty`,
+        text: `Effective branding and design are essential for establishing a distinct identity and fostering trust among customers. They communicate a cohesive message about a company's values and offerings, forging emotional connections with the audience. Good design enhances user experience, positively impacting customer perception and loyalty.`,
         id: 2
     },
     {
