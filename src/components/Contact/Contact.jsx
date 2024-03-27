@@ -12,14 +12,19 @@ import ContactForm from './ContactForm'
 
 import {AiOutlineMail} from 'react-icons/ai'
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
-
-
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = ({sidebarIsOpen, setSidebarIsOpen}) =>{
     // Refs
     const overlayRef = useRef()
     const titleRef = useRef()
     const subRef = useRef()
+
+    const phoneNumber = '+447498509537';
+
+    const handleCall = () => {
+        window.location.href = `tel:${phoneNumber}`;
+    };
 
     // Close sidebar
     useEffect(()=>{
@@ -75,6 +80,12 @@ const Contact = ({sidebarIsOpen, setSidebarIsOpen}) =>{
                     <span className='main-btn-text'><AiOutlineMail /> info@aegis.plus</span>
                 </Link>
             </div>
+
+            <p ref={subRef} className='contact-p'>Or</p>
+
+            <button className='main-btn' onClick={handleCall}>
+                <span className='main-btn-text'><FaPhoneAlt /> Call Us</span>
+            </button>
 
             <Footer />
         </div>

@@ -248,6 +248,12 @@ footer{
         gap: 0.5em;
         flex-direction: column;
     }
+    .footer-copyright{
+        color: var(--blue-dark);
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+    }
 }
 
 @media screen and (min-width: 1440px) {

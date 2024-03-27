@@ -33,7 +33,7 @@ const Footer = () =>{
                 <div className="footer-copyright">
                     <p>Copyright</p>
                     <AiOutlineCopyrightCircle />
-                    <p>{year} Aegis+ Immersive. All rights reserved</p>
+                    <p>{year} Aegis Web Designs Ltd. All rights reserved.</p>
                 </div>
 
                 <div className="footer-socials">
