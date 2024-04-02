@@ -3,7 +3,15 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import './services.css'
 
+import Marquee from "react-fast-marquee";
+
 import HomeServiceLink from './HomeServiceLink';
+import AnimatedText from '../../../common/AnimatedText'
+
+import img1 from '../../../assets/services/serv1.webp'
+import img2 from '../../../assets/services/serv2.png'
+import img3 from '../../../assets/services/serv3.png'
+import img4 from '../../../assets/services/serv4.png'
 
 export default function HomeServices (){
     const wrapperRef = useRef(null);
@@ -30,18 +38,27 @@ export default function HomeServices (){
 
     return(
         <div className="home-services" ref={wrapperRef}>
-            <div className="home-services-top">
-                <h1 className='page-type'>Our Web <span>Services</span></h1>
-                {/* <p>Discover our comprehensive web services designed to <span>elevate your online presence</span> and drive success. From website design and development to e-commerce and web application solutions, Aegis has you covered. Partner with us to navigate the digital landscape and <span>achieve your online goals</span> efficiently.</p> */}
+            <div className="home-services-banner">
+                <Marquee className="marquee">
+                    <AnimatedText text="Services" />
+                </Marquee>
             </div>
+
+            <div className="home-services-wrapper">
+            {/* <div className="home-services-top">
+                <h1 className='page-type'>Our Web <span>Services</span></h1>
+            </div> */}
             <div className="home-services-links">
                 {services.map( service => 
                     <HomeServiceLink 
                         key={service.id} 
                         title={service.title} 
                         explanation={service.explanation}
+                        img={service.image}
+                        color={service.color}
                     /> 
                 )}
+            </div>
             </div>
         </div>
     )
@@ -52,20 +69,21 @@ const services = [
         title: 'Informational Websites',
         explanation: 'From sleek portfolios to engaging blogs, we design user-friendly platforms that captivate and inform your audience',
         desc: 'Showcase your business or organization effectively online with our informational websites. From product highlights to brand information, we create engaging digital brochures that inform and captivate your audience.',
-        image: "",
+        image: img1,
         details: [
             "Tailored design to suit your brand identity",
             "Integration with social media platforms",
             "Search engine optimization (SEO)",
             "Hosting and domain setup"
         ],
+        color: '#2600FF',
         id: 1,
     },
     {
         title: 'Corporate Websites',
         explanation: `Establish credibility and professionalism with a corporate website tailored to your brand's identity`,
         desc: `Elevate your corporate identity with our tailored websites. We craft comprehensive online platforms that reflect your company's history, mission, and offerings, serving as central hubs for stakeholders, including customers, investors, and potential employees.`,
-        image: "",
+        image: img2,
         details: [
             "Professional and modern design",
             "Customized features",
@@ -73,26 +91,28 @@ const services = [
             "Integration with third-party tools",
             "Ongoing maintenance and support services"
         ],
+        color: '#ffffff',
         id: 2,
     },
     {
         title: 'E-commerce',
         explanation: `Whether you're a budding startup or an established enterprise, we design intuitive platforms that streamline the shopping experience for your customers`,
         desc: `Drive online sales with our optimized e-commerce websites. From seamless product browsing to secure payment processing, we build intuitive online storefronts that inspire trust and facilitate transactions, whether you're a boutique shop or a global marketplace.`,
-        image: "",
+        image: img3,
         details: [
             "Secure payment gateway integration",
             "Product catalog management",
             "Order management system",
             "Integration with shipping carriers"
         ],
+        color: '#D9FF00',
         id: 3,
     },
     {
         title: 'Web Applications',
         explanation: `From custom CRM systems to interactive dashboards, we develop tailored solutions that optimize efficiency and productivity`,
         desc: 'Streamline your business processes with our innovative web applications. From social media integration to real-time data processing, our solutions empower your business with enhanced functionality and seamless user experiences, unlocking your online potential.',
-        image: "",
+        image: img4,
         details: [
             "Customized development",
             "Integration with third-party APIs and services",
@@ -100,6 +120,7 @@ const services = [
             "Robust backend infrastructure",
             "Ongoing support and maintenance"
         ],
+        color: '#FF0059',
         id: 4,
     },
 ]

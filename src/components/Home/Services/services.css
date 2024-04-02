@@ -5,7 +5,25 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding: 4em 0;
+    padding: 0em 0;
+    border-radius: 35px 35px 0 0;
+    background: rgb(145, 255, 0);
+}
+.home-services-banner{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+.home-services-banner h1{
+    color: white;
+    font-size: 12rem;
+    font-weight: 700;
+}
+
+.home-services-wrapper{
+    border-radius: 35px 35px 0 0;
+    background: white;
 }
 
 .home-services-top{
@@ -25,30 +43,44 @@
 }
 
 
+
+/* Single services */
 .home-services-links{
     position: relative;
     display: flex;
     flex-direction: column;
+    height: max-content;
 }
 .home-service-link{
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 4em;
     padding: 2em 8em;
+    padding-bottom: calc(2em + 50px);
     background: transparent;
     transition: all 0.3s;
     cursor: pointer;
-    border-bottom: 1px solid black;
+    transform-origin: bottom;
 }
 .home-service-link:nth-child(4){
-    border-bottom: none;
+    border-radius: 0 0 35px 35px;
 }
+
+.home-service-link-border{
+    position: absolute;
+    top: -49px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 35px 35px 0 0;
+}
+
 .home-service-link-overlay{
     position: absolute;
     z-index: -1;
-    background: var(--blue-dark);
+    background: rgba(0, 0, 0, 0);
     width: 100%;
     height: 100%;
     top: 0;
@@ -57,10 +89,7 @@
     transform-origin: left;
     opacity: 0;
 }
-/* .home-service-link:hover{
-    padding:2em 4em;
-} */
-.home-service-link:hover .home-service-link-p{
+/* .home-service-link:hover .home-service-link-p{
     color: white;
 }
 .home-service-link:hover .home-service-link-small{
@@ -69,17 +98,17 @@
 .home-service-link:hover .home-service-link-btn{
     background: white;
     color: var(--font-clr);
-}
+} */
 
 .home-service-link-content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .home-service-link-content > div{
     width: 80%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .home-service-link-p{
     color: var(--font-clr);
@@ -88,15 +117,21 @@
     user-select: none;
     width: 40%;
 }
+.home-service-link:nth-child(1) p, .home-service-link:nth-child(4) p{
+    color: white;
+}
 .home-service-link-small{
     width: 60%;
     font-size: 1rem;
     line-height: 1.5em;
 }
+.home-service-link:nth-child(1) small, .home-service-link:nth-child(4) small{
+    color: white;
+}
 .home-service-link-btn{
     width: 50px;
     height: 50px;
-    border: 1px solid white;
+    border: none;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -111,10 +146,24 @@
 }
 
 
+.home-service-link-img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+.home-service-link-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 980px){
     .home-services{
         padding: 4em 0em;
+        padding-bottom: 0;
     }
     .home-services-top{
         padding: 0 2em;
@@ -151,8 +200,12 @@
 }
 
 @media only screen and (max-width: 480px){
+    .home-services-banner h1{
+        font-size: 5rem;
+    }
     .home-services{
         padding: 4em 0em;
+        padding-bottom: 0;
     }
     .home-services-top{
         padding: 0 1em;
@@ -165,7 +218,8 @@
         margin-top: 2em;
     }
     .home-service-link{
-        padding: 1em;
+        padding: 2em 1em;
+        padding-bottom: calc(2em + 50px);
     }.home-service-link-content > div{
         flex-direction: column;
         gap: 1em;
@@ -176,7 +230,7 @@
     }
     .home-service-link-small{
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .home-service-link:hover{
         padding: 1em;
@@ -191,6 +245,7 @@
 @media screen and (min-width: 1440px) {
     .home-services{
         padding: 8em 0;
+        padding-bottom: 0;
     }
     .home-service-link-content > div{
         gap: 2em;
@@ -205,5 +260,8 @@
         width: 70px;
         height: 70px;
         font-size: 2rem;
+    }
+    .home-service-link-img{
+        height: 500px;
     }
 }

@@ -37,24 +37,29 @@ export default function App () {
     const preconnectLink = document.createElement('link');
     preconnectLink.rel = 'preconnect';
     preconnectLink.href = 'https://fonts.googleapis.com';
+    preconnectLink.crossOrigin = 'true';
 
     const preconnectStaticLink = document.createElement('link');
     preconnectStaticLink.rel = 'preconnect';
     preconnectStaticLink.href = 'https://fonts.gstatic.com';
+    preconnectStaticLink.crossOrigin = 'true';
 
     // Create a link element for the Google Fonts stylesheet
     const fontStylesheetLink = document.createElement('link');
     fontStylesheetLink.href = 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap';
     fontStylesheetLink.rel = 'stylesheet';
+    fontStylesheetLink.crossOrigin = 'true';
 
     // Append the links to the head of the document
     document.head.appendChild(preconnectLink);
+    document.head.appendChild(preconnectStaticLink);
     document.head.appendChild(fontStylesheetLink);
 
     // Cleanup function to remove the added links
     return () => {
-        document.head.removeChild(preconnectLink);
-        document.head.removeChild(fontStylesheetLink);
+      document.head.removeChild(preconnectLink);
+      document.head.removeChild(preconnectStaticLink);
+      document.head.removeChild(fontStylesheetLink);
     };
   }, []);
 

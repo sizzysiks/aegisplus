@@ -1,14 +1,15 @@
 import { useEffect, useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 export default function AnimatedText ({ text }){
     const textRef = useRef(null);
   
-    useEffect(() => {
+    useGSAP(() => {
       // Clear the textRef before appending characters
       textRef.current.innerHTML = '';
 
-      const tl = gsap.timeline({ repeat: -1 });
+      const tl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
   
       // Split text into individual characters
       const chars = text.split('');
@@ -24,17 +25,12 @@ export default function AnimatedText ({ text }){
         textRef.current.appendChild(charElement);
   
         // Animation for each character
-        tl.fromTo(charElement, 
-          { y: -10, color: '#ffffff', opacity: 0 }, 
-          { duration: 0.2, y: 0, color: '#000011', opacity: 1, ease: "bounce.out" }
-        );
+        tl.to(charElement, { duration: 0.02, y: -30, rotateZ: 15, color: '#FD691C', ease: 'expo.out' });
+        tl.to(charElement, { duration: 0.02, delay: 0.04, y: -20, rotateZ: 25, color: '#4ec826', ease: 'expo.out'});
+        tl.to(charElement, { duration: 0.02, delay: 0.06, y: 0, rotateZ: 0, color: '#000011', ease: 'expo.out'});
       });
+    }, { dependencies: [text] });
   
-      return () => {
-        tl.kill(); // Cleanup animation
-      };
-    }, [text]);
-  
-    return <h1 ref={textRef}>{text}</h1>;
+    return <h1 ref={textRef}></h1>;
 };
   

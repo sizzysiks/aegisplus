@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import './reviews.css'
 
 import img1 from '../../assets/reviews/review1.webp'
-import img2 from '../../assets/reviews/review2.webp'
+import img2 from '../../assets/reviews/review3.png'
 
 export default function Reviews (){
     const wrapperRef = useRef(null);
@@ -68,7 +68,7 @@ export default function Reviews (){
                     <div className="card-top">
                         <div className="card-img"><img src={img2} alt="" /></div>
                     </div>
-                    <p>Antino K. <span>Owner, antino.net</span></p>
+                    <p>Susan F. <span>CEO, Juubix</span></p>
                     <small>From the initial consultation to the final launch, they were responsive, collaborative, and committed to delivering a site that truly reflects our brand. We've received countless compliments on the design and functionality, and our online traffic has increased greatly!</small>
                 </div>
             </div>
