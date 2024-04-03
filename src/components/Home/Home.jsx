@@ -24,7 +24,7 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
         <div className="home">
             <Helmet>
                 <title>Aegis+ | Home</title>
-                <meta name='description' content='We are Aegis, a web design studio based in Leicester - We design innovative solutions for your business. Explore our portfolio and services.' />
+                <meta name='description' content='We are Aegis+, a web design studio based in Leicester - We design innovative solutions for your business. Explore our portfolio and services.' />
                 <link rel="canonical" href="https://www.aegis.plus/" />
                 {/* Include Open Graph and Twitter Card meta tags for social media sharing */}
                 <meta property="og:title" content="Aegis+ | Home" />

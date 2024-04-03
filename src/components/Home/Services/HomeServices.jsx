@@ -9,9 +9,9 @@ import HomeServiceLink from './HomeServiceLink';
 import AnimatedText from '../../../common/AnimatedText'
 
 import img1 from '../../../assets/services/serv1.webp'
-import img2 from '../../../assets/services/serv2.png'
-import img3 from '../../../assets/services/serv3.png'
-import img4 from '../../../assets/services/serv4.png'
+import img2 from '../../../assets/services/serv2.webp'
+import img3 from '../../../assets/services/serv3.webp'
+import img4 from '../../../assets/services/serv4.webp'
 
 export default function HomeServices (){
     const wrapperRef = useRef(null);
