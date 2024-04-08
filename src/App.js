@@ -185,5 +185,15 @@ const data = [
     url: 'antino',
     identifier: 'antino',
     id: 8
+  },
+  {
+    title: "Luminae Apparel",
+    sub: "Shopping",
+    desc: `In the bustling streets of a vibrant city, there existed a hidden gem of a boutique, known only to those who sought elegance beyond the ordinary.`,
+    technologies: 'React, React-Three, Three.js',
+    date: '2024',
+    url: 'luminae',
+    identifier: 'luminae',
+    id: 9
   }
 ]

@@ -381,15 +381,19 @@
 @media only screen and (max-width: 480px){
     .hero > div{
         justify-content: center;
+        align-items: flex-start;
         padding: 2em 1em;
     }
     .hero h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 1.1em;
         white-space: wrap;
+        text-align: left;
     }
     .hero p{
         width: 100%;
+        text-align: left;
+        font-size: 1.1rem;
     }
 
     .info, .pre-projects{
