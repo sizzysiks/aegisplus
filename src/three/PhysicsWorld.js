@@ -14,9 +14,9 @@ const PhysicsWorld = () =>{
             <Pointer />
             {baubles.map((props, i) => <Bauble key={i} {...props} />)}
             {/* <BaubleColor color='#ff00d4' /> */}
-            <BaubleColor color='#0062ff' />
+            {/* <BaubleColor color='#0062ff' />
             <BaubleColor color='#ff4d00' />
-            <BaubleColor color='#11ae00' />
+            <BaubleColor color='#11ae00' /> */}
         </Physics>
     )
 }

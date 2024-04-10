@@ -38,27 +38,22 @@ export default function HomeServices (){
 
     return(
         <div className="home-services" ref={wrapperRef}>
-            <div className="home-services-banner">
-                <Marquee className="marquee">
-                    <AnimatedText text="Services" />
-                </Marquee>
+            <div className="home-services-top">
+                <h1 className='page-type'>Our solutions</h1>
             </div>
 
             <div className="home-services-wrapper">
-            {/* <div className="home-services-top">
-                <h1 className='page-type'>Our Web <span>Services</span></h1>
-            </div> */}
-            <div className="home-services-links">
-                {services.map( service => 
-                    <HomeServiceLink 
-                        key={service.id} 
-                        title={service.title} 
-                        explanation={service.explanation}
-                        img={service.image}
-                        color={service.color}
-                    /> 
-                )}
-            </div>
+                <div className="home-services-links">
+                    {services.map( service => 
+                        <HomeServiceLink 
+                            key={service.id} 
+                            title={service.title} 
+                            explanation={service.explanation}
+                            img={service.image}
+                            color={service.color}
+                        /> 
+                    )}
+                </div>
             </div>
         </div>
     )
@@ -76,7 +71,7 @@ const services = [
             "Search engine optimization (SEO)",
             "Hosting and domain setup"
         ],
-        color: '#2600FF',
+        color: '#5D96B4',
         id: 1,
     },
     {
@@ -91,7 +86,7 @@ const services = [
             "Integration with third-party tools",
             "Ongoing maintenance and support services"
         ],
-        color: '#ffffff',
+        color: '#AA7BBD',
         id: 2,
     },
     {
@@ -105,7 +100,7 @@ const services = [
             "Order management system",
             "Integration with shipping carriers"
         ],
-        color: '#D9FF00',
+        color: '#5AB95D',
         id: 3,
     },
     {
@@ -120,7 +115,7 @@ const services = [
             "Robust backend infrastructure",
             "Ongoing support and maintenance"
         ],
-        color: '#FF0059',
+        color: '#F8A660',
         id: 4,
     },
 ]

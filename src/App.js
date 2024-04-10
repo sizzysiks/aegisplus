@@ -46,7 +46,7 @@ export default function App () {
 
     // Create a link element for the Google Fonts stylesheet
     const fontStylesheetLink = document.createElement('link');
-    fontStylesheetLink.href = 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap';
+    fontStylesheetLink.href = 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap';
     fontStylesheetLink.rel = 'stylesheet';
     fontStylesheetLink.crossOrigin = 'true';
 

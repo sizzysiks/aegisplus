@@ -88,51 +88,26 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
-    gap: 0em;
+    align-items: flex-start;
+    gap: 1em;
 }
 .hero h1{
     position: relative;
-    font-size: 4.5rem;
-    font-weight: 600;
-    line-height: 1em;
+    font-size: 7rem;
+    font-weight: 500;
+    line-height: 0.95em;
     color: var(--font-clr);
-    text-transform: uppercase;
-    letter-spacing: 0px;
 }
 .hero h1 span{
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
 }
-/* .hero h1{
-    width: 70%;
-    text-align: left;
-    position: relative;
-    font-size: 112px;
-    font-weight: 500;
-    line-height: 1em;
-    color: var(--blue-dark);
-    text-transform: capitalize;
-    letter-spacing: 0px;
-    font-family: "Noto Serif", serif;
-}
-.hero h2{
-    width: 70%;
-    font-weight: 500;
-    font-family: "Noto Serif", serif;
-    margin: 0;
-    font-size: 112px;
-    line-height: 0.9em;
-    text-align: right;
-} */
 .hero p{
-    width: 50%;
+    width: 60%;
     color: var(--font-clr);
     font-size: 1rem;
     line-height: 1.5em;
-    margin: 2em 0;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
 }
 .hero-content > div{
     display: flex;
@@ -165,6 +140,49 @@
 .hero-chat-btn:hover{
     background: var(--orng);
 }
+.awards{
+    display: flex;
+    align-items: center;
+}
+.awards-img, .awards-div{
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+.awards-img{
+    z-index: 4;
+}
+.awards-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#awards-div-1{
+    z-index: 3;
+    background: var(--blue);
+    transform: translateX(-2.5em);
+}
+#awards-div-2{
+    z-index: 2;
+    background: var(--orng);
+    transform: translateX(-5em);
+}
+#awards-div-3{
+    background: var(--grn);
+    transform: translateX(-7.5em);
+}
+.awards small{
+    color: var(--font-clr);
+    font-weight: 600;
+    transform: translateX(-10em);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
 
 
 .home-sections{
@@ -379,14 +397,18 @@
 }
 
 @media only screen and (max-width: 480px){
-    .hero > div{
-        justify-content: center;
+    .hero > div:nth-child(1){
+        justify-content: flex-end;
         align-items: flex-start;
-        padding: 2em 1em;
+        padding: 4em 1em;
+    }
+    .hero-content-title{
+        display: flex;
+        flex-direction: column;
     }
     .hero h1{
-        font-size: 3rem;
-        line-height: 1.1em;
+        font-size: 3.5rem;
+        line-height: 1em;
         white-space: wrap;
         text-align: left;
     }

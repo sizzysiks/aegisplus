@@ -73,7 +73,9 @@ export default function Reviews (){
                 </div>
             </div>
 
-            <p>Explore what our clients have to say about their experiences working with Aegis+. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
+            <div className="reviews-bottom">
+                <p>Explore what our clients have to say about their experiences working with Aegis+. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
+            </div>
         </div>
     )
 }

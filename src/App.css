@@ -1,8 +1,8 @@
 :root{
   --main-clr: #ffffff;
-  --font-clr: #070707;
+  --font-clr: #181818;
   --font-light: rgb(60, 60, 60);
-  --blue: #0d63e1;
+  --blue: #0066ff;
   --blue-dark: #000011;
   --orange: #FFDD00;
   --bg: #fcfcfc;
@@ -23,7 +23,7 @@ html, body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+   font-family: "Open Sans", sans-serif;
   font-smooth: auto;
 }
 body{

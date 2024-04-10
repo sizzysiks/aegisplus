@@ -42,22 +42,22 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
         //     }
         // );
 
-        gsap.fromTo(
-            imgRef.current,
-            { clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' },
-            {
-                clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-                duration: 0.5,
-                ease: "power4.out",
-                scrollTrigger: {
-                    trigger: imgRef.current,
-                    start: "top 80%",
-                    end: "bottom 0%",
-                    // scrub: true,
-                    toggleActions: "play none play reverse",
-                }
-            }
-        );
+        // gsap.fromTo(
+        //     imgRef.current,
+        //     { clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' },
+        //     {
+        //         clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        //         duration: 0.5,
+        //         ease: "power4.out",
+        //         scrollTrigger: {
+        //             trigger: imgRef.current,
+        //             start: "top 80%",
+        //             end: "bottom 0%",
+        //             // scrub: true,
+        //             toggleActions: "play none play reverse",
+        //         }
+        //     }
+        // );
     }, { dependencies: [] });
 
     return(
