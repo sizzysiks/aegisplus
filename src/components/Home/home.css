@@ -225,7 +225,7 @@
     justify-content: center;
     padding: 4em 8em;
 }
-.info h1{
+.info p{
     white-space: nowrap;
     line-height: 1em;
     color: black;
@@ -241,14 +241,14 @@
     color: var(--font-light);
     font-weight: 300;
 }
-.info p{
+.info small{
     color: var(--font-light);
     width: 60%;
     font-size: 1.2rem;
     line-height: 1.5em;
     align-self: flex-end;
 }
-.info p span{
+.info small span{
     color: var(--blue-dark);
     text-decoration: underline;
 }
@@ -359,7 +359,7 @@
         padding:  2em 4em;
     }
     .hero h1{
-        font-size: 2.5rem;
+        font-size: 4.5rem;
         line-height: 1.1em;
     }
     .hero p{
@@ -370,7 +370,7 @@
         padding: 2em 4em;
         justify-content: flex-end;
     }
-    .info h1{
+    .info p{
         font-size: 3rem;
         line-height: 1em;
         white-space: wrap;
@@ -380,7 +380,7 @@
         font-size: 3rem;
         line-height: 1em;
     }
-    .info p{
+    .info small{
         width: 100%;
     }
 
@@ -422,7 +422,7 @@
         padding: 2em 1em;
         justify-content: flex-end;
     }
-    .info h1{
+    .info p{
         font-size: 2.5rem;
         line-height: 1em;
         white-space: wrap;
@@ -431,7 +431,7 @@
         font-size: 3rem;
         line-height: 1em;
     }
-    .info p{
+    .info small{
         width: 100%;
     }
     .view-work{
@@ -451,13 +451,19 @@
         padding: 8em;
     }
     .hero h1{
-        font-size: 6rem;
+        font-size: 10rem;
+        line-height: 1em;
     }
     .hero p{
-        font-size: 1.5rem;
+        font-size: 2rem;
+        line-height: 1.2em;
+    }
+    .awards small{
+        font-size: 1rem;
+        transform: translateX(-8em);
     }
 
-    .info p{
+    .info small{
         font-size: 1.5rem;
     }
 }
