@@ -6,6 +6,8 @@ import './reviews.css'
 import img1 from '../../assets/reviews/review1.webp'
 import img2 from '../../assets/reviews/review3.png'
 
+import Button from '../../common/Button'
+
 export default function Reviews (){
     const wrapperRef = useRef(null);
     const ref1 = useRef(null);
@@ -75,6 +77,9 @@ export default function Reviews (){
 
             <div className="reviews-bottom">
                 <p>Explore what our clients have to say about their experiences working with Aegis+. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
+                <div>
+                    <Button url="/contact" label="Let's join forces" />
+                </div>
             </div>
         </div>
     )

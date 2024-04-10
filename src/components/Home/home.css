@@ -400,7 +400,7 @@
     .hero > div:nth-child(1){
         justify-content: flex-end;
         align-items: flex-start;
-        padding: 4em 1em;
+        padding: 4em 1em 6em 1em;
     }
     .hero-content-title{
         display: flex;
