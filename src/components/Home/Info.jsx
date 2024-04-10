@@ -4,8 +4,6 @@ import { useGSAP } from "@gsap/react";
 
 import Button from "../../common/Button";
 
-import { BsArrowDown } from "react-icons/bs";
-
 export default function Info ({ scrollY }){
     const wrappeRef = useRef(null);
     const h1Ref = useRef(null);
@@ -26,78 +24,9 @@ export default function Info ({ scrollY }){
         }      
     }, { dependencies: [scrollY] });
 
-    // useGSAP(() => {
-    //     gsap.fromTo(
-    //         wrappeRef.current,
-    //         { y: 100 },
-    //         {
-    //             y: 0,
-    //             duration: 1,
-    //             ease: "expo.out",
-    //             scrollTrigger: {
-    //                 trigger: '.info',
-    //                 start: "top 50%",
-    //                 end: "bottom 20%",
-    //                 toggleActions: "play reverse play reverse",
-    //             }
-    //         }
-    //     );
-
-    //     gsap.fromTo(
-    //         h1Ref.current,
-    //         { opacity: 1, y: 100 },
-    //         {
-    //             opacity: 1,
-    //             y: 0,
-    //             duration: 1,
-    //             ease: "expo.out",
-    //             scrollTrigger: {
-    //                 trigger: '.info',
-    //                 start: "top 50%",
-    //                 end: "bottom 20%",
-    //                 toggleActions: "play reverse play reverse",
-    //             }
-    //         }
-    //     );
-        
-    //     gsap.fromTo(
-    //         pRef.current,
-    //         { opacity: 1, y: 100 },
-    //         {
-    //             opacity: 1,
-    //             y: 0,
-    //             duration: 1,
-    //             ease: "expo.out",
-    //             scrollTrigger: {
-    //                 trigger: '.info',
-    //                 start: "top 50%",
-    //                 end: "bottom 20%",
-    //                 toggleActions: "play reverse play reverse",
-    //             }
-    //         }
-    //     );
-
-    //     gsap.fromTo(
-    //         btnRef.current,
-    //         { opacity: 1, y: 100 },
-    //         {
-    //             opacity: 1,
-    //             y: 0,
-    //             duration: 1,
-    //             ease: "expo.out",
-    //             scrollTrigger: {
-    //                 trigger: '.info',
-    //                 start: "top 50%",
-    //                 end: "bottom 20%",
-    //                 toggleActions: "play reverse play reverse",
-    //             }
-    //         }
-    //     );
-    // }, { dependencies: [] });
-
     return(
         <div className="info" ref={wrappeRef}>
-            <h3 className="page-type">Get to know us</h3>
+            <h1 className="page-type">Get to know us</h1>
             <h1 
                 ref={h1Ref} 
                 className="secondaty-titles"
@@ -109,8 +38,6 @@ export default function Info ({ scrollY }){
             </p>
 
             <Button url="/about" label="About us" />
-
-            {/* <span id="info-arrow"><BsArrowDown /></span> */}
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import './reviews.css'
 
 import img1 from '../../assets/reviews/review1.webp'
-import img2 from '../../assets/reviews/review3.png'
+import img2 from '../../assets/reviews/review3.webp'
 
 import Button from '../../common/Button'
 
