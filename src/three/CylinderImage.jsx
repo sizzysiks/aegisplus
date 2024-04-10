@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { extend, useFrame, useThree } from '@react-three/fiber';
+import { extend, useFrame } from '@react-three/fiber';
 import * as THREE from 'three'
 
 import { useNavigate } from 'react-router-dom';
