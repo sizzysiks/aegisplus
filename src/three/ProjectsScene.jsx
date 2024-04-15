@@ -29,7 +29,7 @@ export default function ProjectsScene ({ isMobile, scrollY}){
     return(
         <Canvas 
             // gl={{ alpha: false }} 
-            camera={{ rotation: [0, 0, isMobile? Math.PI * 0.1: 0.1], position: [0, 0, isMobile? 5: 4.85] }}
+            camera={{ rotation: [0, 0, isMobile? Math.PI * 0.1: 0.1], position: [0, 0, isMobile? 4.9: 4.87] }}
             onCreated={(state) => (state.gl.toneMappingExposure = 1.3)}
         >
             {/* <CameraMesh scrollY={scrollY} /> */}

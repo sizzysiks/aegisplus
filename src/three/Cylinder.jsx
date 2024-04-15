@@ -15,7 +15,7 @@ const count = 5
 const thetaLength = (Math.PI / 2) / count
 const offset = thetaLength + 0.01
 
-const geometry = new THREE.CylinderGeometry(1.92, 1.92, 0.38, 36, 36, true, 1.4, thetaLength)
+const geometry = new THREE.CylinderGeometry(1.87, 1.87, 0.35, 36, 36, true, 1.4, thetaLength)
 
 const Cylinder = ({ isMobile, scrollY }) =>{
     // Ref for group
