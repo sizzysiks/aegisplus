@@ -17,12 +17,13 @@
     display: flex;
     align-items: flex-start;
     gap: 1em;
-    border-radius: var(--radius);
-    padding: 1em 2em;
+    border-radius: var(--div-radius);
+    padding: 2em;
     cursor: pointer;
 }
 .faq-active{
     background: rgb(222, 222, 222);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .faq span, .faq-active span{
     position: relative;
@@ -56,13 +57,14 @@
     gap: 1em;
 }
 .faq > div p, .faq-active > div p{
-    color: var(--font-clr);
+    color: black;
     font-weight: 500;
     font-size: 1.2rem;
 }
 .faq > div small, .faq-active > div small{
     font-size: 1rem;
     line-height: 1.5em;
+    color: var(--font-light);
 }
 
 

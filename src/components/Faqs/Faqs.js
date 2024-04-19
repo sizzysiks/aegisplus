@@ -4,7 +4,7 @@ import './faqs.css'
 import Faq from './Faq';
 
 export default function Faqs (){
-    const [activeFaq, setActiveFaq] = useState(0);
+    const [activeFaq, setActiveFaq] = useState(1);
 
     return(
         <section className="faqs">

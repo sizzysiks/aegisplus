@@ -17,43 +17,18 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
         navigate("/about")
     }
 
-    const handleMouseEnter = () =>{
-        // gsap.to(overlayRef.current,  { duration: 0.3, scaleX: 1, opacity: 1, ease: "expo.out" })
-    }
-
-    const handleMouseLeave = () =>{
-        // gsap.to(overlayRef.current,  { duration: 0.3, scaleX: 0, opacity: 0, ease: "expo.in" })
-    }
-
     useGSAP(() => {
-        // gsap.fromTo(
-        //     linkRef.current,
-        //     { opacity: 0.5 },
-        //     {
-        //         opacity: 1,
-        //         ease: "power4.out",
-        //         scrollTrigger: {
-        //             trigger: linkRef.current,
-        //             start: "top bottom",
-        //             end: "bottom 0%",
-        //             scrub: true,
-        //             toggleActions: "play none play reverse",
-        //         }
-        //     }
-        // );
-
         gsap.fromTo(
             imgRef.current,
             { clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' },
             {
                 clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
                 duration: 0.5,
-                ease: "power4.out",
                 scrollTrigger: {
                     trigger: imgRef.current,
-                    start: "top 80%",
+                    start: "top 100%",
                     end: "bottom 0%",
-                    // scrub: true,
+                    scrub: true,
                     toggleActions: "play none play reverse",
                 }
             }
@@ -63,8 +38,6 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
     return(
         <div 
             className="home-service-link" 
-            onMouseEnter={handleMouseEnter} 
-            onMouseLeave={handleMouseLeave}
             onClick={handleClick}
             ref={linkRef}
             style={{ background: color }}

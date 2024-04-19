@@ -11,7 +11,7 @@
   --orng: #FD691C;
   --bl: #0bcaff;
   --grn: #4ec826;
-  --div-radius: 15px;
+  --div-radius: 35px;
 }
 
 *{
@@ -62,9 +62,10 @@ body p, small, span, label{
 }
 
 .page-type{
-  color: var(--font-clr);
-  font-size: 1rem;
-  font-weight: 700;
+  color: var(--font-light);
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 100px;
   text-transform: uppercase;
 }
 
@@ -218,14 +219,14 @@ body p, small, span, label{
 
 
 @media only screen and (max-width: 480px){
-
+  .page-type{
+    font-size: 50px;
+    line-height: 55px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .btn, .main-btn, .secondary-btn{
     font-size: 1.2rem;
-  }
-  .page-type{
-    font-size: 1.5rem;
   }
 }

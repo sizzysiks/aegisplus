@@ -38,7 +38,7 @@
     flex-direction: column;
     gap: 1em;
     padding: 2em;
-    border-radius: 15px;
+    border-radius: var(--div-radius);
     background: rgb(228, 228, 228);
 }
 .card:nth-child(1){

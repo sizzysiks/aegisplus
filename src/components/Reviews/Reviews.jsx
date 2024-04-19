@@ -19,14 +19,12 @@ export default function Reviews (){
             { rotateZ: '-20deg' },
             {
                 rotateZ: '0deg',
-                ease: "expo.out",
                 scrollTrigger: {
                     trigger: ref1.current,
                     start: "top 80%",
                     end: "bottom 0%",
                     scrub: true,
                     toggleActions: "play none play reverse",
-                    // markers: true // For debugging, can be removed
                 }
             }
         );
@@ -36,14 +34,12 @@ export default function Reviews (){
             { rotateZ: '20deg' },
             {
                 rotateZ: '0deg',
-                ease: "expo.out",
                 scrollTrigger: {
                     trigger: ref2.current,
                     start: "top 90%",
                     end: "bottom 0%",
                     scrub: true,
                     toggleActions: "play none play reverse",
-                    // markers: true // For debugging, can be removed
                 }
             }
         );  

@@ -6,11 +6,11 @@
     flex-direction: column;
     gap: 2em;
     padding: 0em;
-    border-radius: 15px 15px 0 0;
+    border-radius: var(--div-radius) var(--div-radius) 0 0;
 }
 
 .home-services-wrapper{
-    border-radius: 35px 35px 0 0;
+    border-radius: var(--div-radius) var(--div-radius) 0 0;
     background: white;
 }
 
@@ -54,7 +54,7 @@
     transform-origin: bottom;
 }
 .home-service-link:nth-child(4){
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 var(--div-radius) var(--div-radius);
 }
 
 .home-service-link-border{
@@ -63,7 +63,7 @@
     left: 0;
     width: 100%;
     height: 50px;
-    border-radius: 15px 15px 0 0;
+    border-radius: var(--div-radius) var(--div-radius) 0 0;
 }
 
 .home-service-link-overlay{
@@ -124,7 +124,7 @@
     width: 100%;
     height: 500px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: var(--div-radius);
 }
 .home-service-link-img img{
     width: 100%;
