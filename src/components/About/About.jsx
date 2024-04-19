@@ -36,19 +36,15 @@ const About = ({sidebarIsOpen, setSidebarIsOpen}) =>{
     return(
         <div className="about">
             <Helmet>
-                <title>Aegis+ | About</title>
-                <meta name='description' content='We are Aegis, a web design studio based in Leicester - We design innovative solutions for your business. Explore our portfolio and services.' />
+                <title>Aegis Plus - About</title>
+                <meta name='description' content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team, our commitment to innovation, and how we strive to exceed our clients' expectations. Join us on our journey to transform the digital landscape. Get in touch today!" />
                 <link rel="canonical" href="https://www.aegis.plus/about" />
-                {/* Include Open Graph and Twitter Card meta tags for social media sharing */}
-                <meta property="og:title" content="Aegsi+ | About" />
-                <meta property="og:description" content='We are Aegis, a web design studio based in Leicester - We design innovative solutions for your business. Explore our portfolio and services.' />
+                <meta property="og:title" content="Aegis Plus - About" />
+                <meta property="og:description" content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team, our commitment to innovation, and how we strive to exceed our clients' expectations. Join us on our journey to transform the digital landscape. Get in touch today!" />
                 <meta property="og:url" content="https://www.aegis.plus/about" />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="https://www.example.com/images/og-image.jpg" />
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Aegis+ | About" />
-                <meta name="twitter:description" content='We are Aegis, a web design studio based in Leicester - We design innovative solutions for your business. Explore our portfolio and services.' />
-                {/* <meta name="twitter:image" content="https://www.example.com/images/twitter-card-image.jpg" /> */}
+                <meta name="twitter:title" content="Aegis Plus - About" />
+                <meta name="twitter:description" content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team, our commitment to innovation, and how we strive to exceed our clients' expectations. Join us on our journey to transform the digital landscape. Get in touch today!" />
             </Helmet>
 
             <div className="about-overlay" ref={overlayRef}></div>
