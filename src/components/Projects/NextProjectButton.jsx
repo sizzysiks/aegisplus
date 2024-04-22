@@ -7,7 +7,7 @@ export default function NextProjectButton ({ currentProject, data }){
     const navigate = useNavigate();
 
     const handleNextButton = () =>{
-        if(Number(currentProject.id) < 9){
+        if(Number(currentProject.id) < 10){
             const nextId = Number(currentProject.id) + 1;
 
             const nextProject = data.find( project => project.id === nextId );
@@ -19,7 +19,7 @@ export default function NextProjectButton ({ currentProject, data }){
     return(
         <div className="project-buttons">
             {
-                Number(currentProject.id) === 9? 
+                Number(currentProject.id) === 10? 
                     <Link className="btn" to="/projects"><span className="btn-text">All work</span></Link>
                     : <button className="btn" onClick={handleNextButton}> 
                         <span className="btn-text">Next project</span>

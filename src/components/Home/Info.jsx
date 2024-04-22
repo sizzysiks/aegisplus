@@ -26,14 +26,8 @@ export default function Info ({ scrollY }){
 
     return(
         <div className="info" ref={wrappeRef}>
-            {/* <h3 className="page-type">Get to know us</h3> */}
             <div className="info-content">
-                <p
-                ref={h1Ref} 
-                className="secondaty-titles"
-                >
-                Welcome to <span id="info-do">Aegis,</span> where<br></br> digital dreams take flight✈️
-                </p>
+                <p ref={h1Ref} className="page-type">Launch Your Digital Dreams</p>
                 <small ref={pRef}>
                     We specialize in crafting distinctive online identities for businesses, ensuring your brand <span>stands out from the crowd</span>. Say goodbye to cookie-cutter websites with countless online duplicates.
                 </small>

@@ -146,16 +146,6 @@ const data = [
     identifier: '3d-customizer',
     id: 5
   },
-  // {
-  //   title: "JUUBIX",
-  //   sub: "Mini game",
-  //   desc: "JUUBIX supplies ‘Stakeholders as a Service’ (SaaS) by providing a new collaborative marketplace for talent, companies, and investors.",
-  //   technologies: 'React, Next.js, React-Three, Three.js',
-  //   date: 'Ongoing',
-  //   url: 'juubix',
-  //   identifier: 'juubix',
-  //   id: 6
-  // },
   {
     title: "Stockbet",
     sub: "Betting tips website",
@@ -195,5 +185,15 @@ const data = [
     url: 'luminae',
     identifier: 'luminae',
     id: 9
+  },
+  {
+    title: "JUUBIX",
+    sub: "Mini game",
+    desc: "JUUBIX supplies ‘Stakeholders as a Service’ (SaaS) by providing a new collaborative marketplace for talent, companies, and investors.",
+    technologies: 'React, Next.js, React-Three, Three.js',
+    date: 'Ongoing',
+    url: 'juubix',
+    identifier: 'juubix',
+    id: 10
   }
 ]

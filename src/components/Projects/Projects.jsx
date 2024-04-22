@@ -56,8 +56,8 @@ const Projects = ({ sidebarIsOpen, setSidebarIsOpen, data }) =>{
             <Nav sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} />
             {sidebarIsOpen? <Sidebar /> : ""}
             <div className="projects-content">
-                <h1 ref={titleRef} className='h1-pages'>Work</h1>
-                <p ref={subRef} className="projects-p">A collection of client work, including full stack web applications, frontent development, web design & 3D design.</p>                
+                <h1 ref={titleRef} className='page-type'>Our portfolio</h1>
+                <p ref={subRef} className="projects-p">Explore stunning projects in full stack development, frontend design, and 3D innovation.</p>                
                 <div ref={projectsRef} className="projects-links">
                     {data.map( project =>
                         <ProjectsLink key={project.id} project={project} />

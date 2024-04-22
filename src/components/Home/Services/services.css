@@ -122,14 +122,14 @@
 
 .home-service-link-img{
     width: 100%;
-    height: 500px;
     overflow: hidden;
     border-radius: var(--div-radius);
+    transform-origin: left bottom;
 }
 .home-service-link-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 
@@ -216,15 +216,21 @@
         width: 40px;
         height: 40px;
     }
-    .home-service-link-img{
-        height: 300px;
-    }
 }
 
 @media screen and (min-width: 1440px) {
     .home-services{
         padding: 8em 0;
         padding-bottom: 0;
+    }
+    .home-services-top{
+        padding: 8em 16em;
+        padding-top: 0em;
+    }
+
+    .home-service-link{
+        padding: 4em 16em;
+        padding-bottom: 8em;
     }
     .home-service-link-content > div{
         gap: 2em;

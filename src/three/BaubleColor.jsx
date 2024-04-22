@@ -3,7 +3,7 @@ import { useRef } from "react"
 import { useFrame } from "@react-three/fiber"
 import { BallCollider, RigidBody, CylinderCollider } from "@react-three/rapier"
 
-const sphereGeometry = new THREE.CapsuleGeometry( 0.2, 0.2, 32, 32 )
+const sphereGeometry = new THREE.CapsuleGeometry( 0.4, 0.4, 32, 32 )
 
 export default function BaubleColor({ vec = new THREE.Vector3(), scale = [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)], r = THREE.MathUtils.randFloatSpread, color }) {
     const baubleMaterial = new THREE.MeshStandardMaterial({ color: color, metalness: 0.8, roughness: 0.1 })

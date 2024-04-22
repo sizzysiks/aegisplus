@@ -4,11 +4,6 @@
     flex-direction: column;
     gap: 2em;
 }
-.services h1{
-    color: var(--font-clr);
-    font-weight: 500;
-    font-size: 2rem;
-}
 
 .services > div{
     display: flex;
@@ -25,16 +20,16 @@
     background: white;
 }
 .service-wrapper:nth-child(1){
-    border-top: 2px solid var(--grn);
+    background: var(--blue);
 }
 .service-wrapper:nth-child(2){
-    border-top: 2px solid var(--blue);
+    background: var(--grn);
 }
 .service-wrapper:nth-child(3){
-    border-top: 2px solid var(--prpl);
+    background: var(--orng);
 }
 .service-wrapper:nth-child(4){
-    border-top: 2px solid var(--orng);
+    background: var(--prpl);
 }
 .service-content{
     width: 100%;
@@ -45,11 +40,11 @@
 .service-content p{
     font-size: 3rem;
     font-weight: 400;
-    color: var(--font-clr);
+    color: white;
     line-height: 1em;
 }
 .service-content small{
-    color: var(--font-light);
+    color: white;
     line-height: 1.5em;
     font-size: 1rem;
 }
@@ -63,13 +58,27 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
-    color: var(--font-clr);
+    color: white;
     list-style-type: none;
 }
 .service-icon{
-    color: var(--grn);
+    color: white;
 }
 
+
+@media only screen and (max-width: 980px){
+    .service-wrapper{
+        flex-direction: column;
+        padding: 2em;
+        flex-basis: calc(100% - 1em); /* Take up full width with gap */
+    }
+    .service-img, .service-content{
+        width: 100%;
+    }
+    .service-content p{
+        font-size: 2rem;
+    }
+}
 
 @media only screen and (max-width: 480px){
     .service-wrapper{

@@ -16,7 +16,7 @@ export default function Reviews (){
     useGSAP(() => {
         gsap.fromTo(
             ref1.current,
-            { rotateZ: '-20deg' },
+            { rotateZ: '-5deg' },
             {
                 rotateZ: '0deg',
                 scrollTrigger: {
@@ -31,7 +31,7 @@ export default function Reviews (){
 
         gsap.fromTo(
             ref2.current,
-            { rotateZ: '20deg' },
+            { rotateZ: '5deg' },
             {
                 rotateZ: '0deg',
                 scrollTrigger: {
@@ -72,7 +72,7 @@ export default function Reviews (){
             </div>
 
             <div className="reviews-bottom">
-                <p>Explore what our clients have to say about their experiences working with Aegis+. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
+                <p>Explore what our clients have to say about their experiences working with Aegis Plus. Our commitment to excellence shines through in every project, delivering results that exceed expectations.</p>
                 <div>
                     <Button url="/contact" label="Let's join forces" />
                 </div>

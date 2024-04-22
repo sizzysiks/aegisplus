@@ -8,7 +8,6 @@ import './contact.css'
 import Nav from '../Nav/Nav'
 import Sidebar from '../Sidebar/Sidebar'
 import Footer from '../Footer/Footer'
-import ContactForm from './ContactForm'
 
 import {AiOutlineMail} from 'react-icons/ai'
 import { IoChatboxEllipsesOutline } from "react-icons/io5";

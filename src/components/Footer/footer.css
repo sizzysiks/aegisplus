@@ -245,7 +245,7 @@ footer{
 
     .footer-bottom{
         padding: 1em;
-        gap: 0.5em;
+        gap: 1em;
         flex-direction: column;
     }
     .footer-copyright{
@@ -254,14 +254,29 @@ footer{
         align-items: center;
         gap: 0.2em;
     }
+    .footer-socials{
+        width: 100%;
+        align-items: flex-start;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    .footer-top-links{
+        width: 50%;
+        height: 100%;
+        padding: 4em 4em 4em 16em;
+        display: flex;
+        justify-content: space-between;
+    }
     .footer-top-link{
         font-size: 1.8rem;
     }
     .footer-top-contact p{
         font-size: 2.5rem;
+    }
+
+    .footer-top-contact{
+        padding: 4em 16em 4em 4em;
     }
     .footer-top-contact-input{
         font-size: 1.5rem;
@@ -273,6 +288,9 @@ footer{
         font-size: 1.5rem;
     }
 
+    .footer-bottom{
+        padding: 4em 16em;
+    }
     .footer-copyright p{
         font-size: 1.2rem;
     }
@@ -280,6 +298,9 @@ footer{
         font-size: 1.2rem;
     }
 
+    .footer-contact-wrapper{
+        padding: 8em 16em;
+    }
     .footer-contact > div h2{
         font-size: 2rem;
     }

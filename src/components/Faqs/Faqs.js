@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './faqs.css'
 
 import Faq from './Faq';
+// import FaqQuestion from './FaqQuestion';
 
 export default function Faqs (){
     const [activeFaq, setActiveFaq] = useState(1);
@@ -13,6 +14,8 @@ export default function Faqs (){
             <div className="faqs-container">
                 {faqs.map( faq => <Faq key={faq.id} title={faq.title} text={faq.text} id={faq.id} activeFaq={activeFaq} setActiveFaq={setActiveFaq} />)}
             </div>
+
+            {/* <FaqQuestion /> */}
         </section>
     )
 }
@@ -43,8 +46,8 @@ const faqs = [
     {
         title: "How does your website design process work?",
         text: `We start with an initial consultation and questionnaire to understand your goals and preferences.
-        We create a tailored design proposal for your review and feedback. Upon approval, we build your website, incorporating all necessary features.
-        while provide ongoing support and maintenance after launch to ensure your website's success.`,
+        We create a tailored design proposal for your review and feedback. Upon approval, we build your website, incorporating all necessary features,
+        while providing ongoing support and maintenance after launch to ensure your website's success.`,
         id: 5
     },
 ]

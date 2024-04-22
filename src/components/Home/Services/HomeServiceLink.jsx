@@ -23,12 +23,12 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
             { clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' },
             {
                 clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-                duration: 0.5,
+                duration: 1,
+                ease: "expo.out",
                 scrollTrigger: {
                     trigger: imgRef.current,
                     start: "top 100%",
                     end: "bottom 0%",
-                    scrub: true,
                     toggleActions: "play none play reverse",
                 }
             }

@@ -54,7 +54,7 @@ const About = ({sidebarIsOpen, setSidebarIsOpen}) =>{
 
             <div className="about-section-wrapper">
                 <div className="about-section" ref={introRef}>
-                    <h1>Aegis, Where Innovation Meets Recognition</h1>
+                    <h1 className='page-type'>Aegis, Where Innovation Meets ACCLAIM</h1>
                     <p> We're an <span>award-winning</span> team passionate about crafting exceptional digital experiences that amplify your 
                     brand's story. We specialize in bringing your unique vision to life.
                     Through close collaboration, we help define and refine your brand identity, creating digital solutions that 

@@ -14,10 +14,9 @@
     margin: 0;
 }
 .reviews p{
-    font-size: 1rem;
-    line-height: 1.5em;
     color: var(--font-light);
-    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5em;
 }
 .reviews p span{
     font-size: 1rem;
@@ -93,7 +92,7 @@
 .reviews-bottom{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 }
 
 /* MEDIA QUERIES */
@@ -138,10 +137,15 @@
 
 @media screen and (min-width: 1440px) {
     .reviews{
-        padding: 8em;
+        padding: 8em 16em;
+        gap: 4em;
     }
     .reviews p{
         font-size: 2rem;
+    }
+
+    .reviews-cards{
+        gap: 4em;
     }
     .card-img{
         height: 500px;
@@ -154,5 +158,9 @@
     }
     .card small{
         font-size: 1.5rem;
+    }
+
+    .reviews-bottom{
+        gap: 2em;
     }
 }

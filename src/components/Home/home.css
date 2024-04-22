@@ -7,65 +7,6 @@
     overflow-x: hidden;
 }
 
-.cylinder-image-wrapper{
-    width: 3em;
-    height: 3em;
-    border: 1px solid white;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.427);
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cylinder-image-wrapper p{
-    color: white;
-    font-size: 0.7rem;
-}
-
-.home-text{
-    width: 25%;
-    position: fixed;
-    left: 4em;
-    bottom: 4em;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    user-select: none;
-}
-.home-text h1{
-    font-size: 2rem;
-    margin: 0;
-    text-align: left;
-    line-height: 0.8em;
-    color: white;
-}
-.home-text p{
-    text-align: left;
-    color: white;
-}
-.home-text span{
-    color: var(--orange);
-}
-.home-text button{
-    width: max-content;
-    border: none;
-    border-radius: var(--radius);
-    color: var(--orange);
-    background: transparent;
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    transition: all 0.3s;
-}
-.home-text button:hover{
-    background: var(--blue-dark);
-    color: var(--orange);
-}
-
 
 /* Hero */
 .hero{
@@ -93,10 +34,11 @@
 }
 .hero h1{
     position: relative;
-    font-size: 7rem;
-    font-weight: 500;
-    line-height: 0.95em;
-    color: var(--font-clr);
+    color: var(--font-light);
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 100px;
+  text-transform: uppercase;
 }
 .hero h1 span{
     font-weight: 600;
@@ -114,32 +56,6 @@
     align-items: center;
     gap: 1em;
 }
-.hero-btn{
-    position: absolute;
-    bottom: 0;
-    right: 5em;
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    background: var(--orange);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero-chat-btn{
-    background: var(--orange);
-    aspect-ratio: 1/1;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    transition: transform 0.3s;
-}
-.hero-chat-btn:hover{
-    background: var(--orng);
-}
 
 /* Awards section */
 .awards{
@@ -147,6 +63,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin-top: 1em;
 }
 .awards-img, .awards-div{
     width: 2em;
@@ -189,6 +106,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    transform: translateY(25%);
     width: 100px;
     height: 100px;
 }
@@ -234,7 +152,6 @@
 /* Info */
 .info{
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -248,16 +165,6 @@
     gap: 2em;
     padding: 4em;
     border-radius: var(--div-radius);
-}
-.info-content p{
-    white-space: nowrap;
-    line-height: 1.2em;
-    color: var(--font-clr);
-    font-size: 3.5rem;
-    font-weight: 400;
-}
-#info-do{
-    font-weight: 600;
 }
 #info-dont{
     color: var(--font-light);
@@ -317,62 +224,6 @@
     font-size: 5rem;
 }
 
-
-.test{
-    width: 100%;
-    height: 100vh;
-    background: black;
-}
-.test-content{
-    width: 80%;
-    height: 100%;
-    background: white;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-.test-desc{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.test-desc-top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.test-desc-top span{
-    color: var(--font-clr);
-    font-weight: 500;
-    font-size: 1rem;
-}
-.test-desc h1{
-    color: var(--font-clr);
-    text-align: left;
-    font-size: 9em;
-    font-weight: 700;
-    letter-spacing: 5px;
-}
-.test-desc small{
-    color: var(--font-clr);
-    font-size: 1rem;
-    line-height: 1.3em;
-}
-
-.test-img{
-    width: 100%;
-    height: 60%;
-    overflow: hidden;
-}
-.test-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* MEDIA QUERIES */
 @media only screen and (max-width: 980px){
     .hero > div{
@@ -392,7 +243,7 @@
         justify-content: flex-end;
     }
     .info p{
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1em;
         white-space: wrap;
         width: 100%;
@@ -428,15 +279,16 @@
         flex-direction: column;
     }
     .hero h1{
-        font-size: 3.5rem;
-        line-height: 1em;
+        font-size: 50px;
+        line-height: 55px;
         white-space: wrap;
         text-align: left;
     }
     .hero p{
         width: 100%;
         text-align: left;
-        font-size: 1.1rem;
+        font-size: 19px;
+        line-height: 27px;
     }
     .award{
         width: 60px;
@@ -445,15 +297,15 @@
     }
 
     .info, .pre-projects{
-        padding: 2em 1em;
+        padding: 4em 0em;
         justify-content: flex-end;
     }
     .info-content{
         padding: 2em;
     }
     .info p{
-        font-size: 2.5rem;
-        line-height: 1.2em;
+        font-size: 50px;
+        line-height: 55px;
         white-space: wrap;
     }
     .secondaty-titles{
@@ -477,21 +329,26 @@
 
 @media screen and (min-width: 1440px) {
     .hero-content{
-        padding: 8em;
+        padding: 8em 16em;
     }
     .hero h1{
         font-size: 10rem;
         line-height: 1em;
     }
     .hero p{
-        font-size: 2rem;
-        line-height: 1.2em;
+        font-size: 1.5rem;
     }
     .awards small{
         font-size: 1rem;
         transform: translateX(-8em);
     }
 
+    .info{
+        padding: 8em 16em;
+    }
+    .info-content{
+        padding: 8em;
+    }
     .info small{
         font-size: 1.5rem;
     }

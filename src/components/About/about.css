@@ -1,12 +1,10 @@
 .about{
     position: relative;
     width: 100%;
-    min-height: 100vh;
     background: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
 }
 .about-overlay{
     position: fixed;
@@ -35,24 +33,17 @@
     padding: 2em;
     border-radius: var(--div-radius);
 }
-.about-section h1{
-    width: 100%;
-    line-height: 1em;
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 0;
-    /* font-family: 'Raleway', sans-serif; */
-    color: var(--font-clr);
-}
-.about-section p, .about-section-2 p{
-    line-height: 1.5em;
-    font-size: 1rem;
+.about-section > p, .about-section-2 > p{
     color: var(--font-light);
+    width: 60%;
+    font-size: 1.2rem;
+    line-height: 1.5em;
 }
-.about-section-2 p{
+.about-section-2 > p{
+    width: 100%;
     color: white;
 }
-.about-section p span{
+.about-section > p span{
     text-decoration: underline;
 }
 
@@ -67,13 +58,14 @@
     .about-section{
         padding: 1em;
     }
+    .about-section p, .about-section-2 p{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 1440px) {
     .about-section-wrapper{
+        padding: 8em 16em;
         padding-top: 16em;
-    }
-    .about-section h1{
-        font-size: 2.5rem;
     }
     .about-section p, .about-section-2 p{
         font-size: 2rem;

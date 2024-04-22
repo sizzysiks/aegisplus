@@ -3,10 +3,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import './services.css'
 
-import Marquee from "react-fast-marquee";
-
 import HomeServiceLink from './HomeServiceLink';
-import AnimatedText from '../../../common/AnimatedText'
 
 import img1 from '../../../assets/services/serv1.webp'
 import img2 from '../../../assets/services/serv2.webp'

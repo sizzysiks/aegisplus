@@ -12,6 +12,7 @@ import AllProjectsButton from './AllProjectsButton'
 import Reviews from '../reviews/Reviews'
 import Faqs from '../Faqs/Faqs'
 
+const Work = lazy(() => import('./Work/Work'))
 const HomeServices = lazy(() => import('./Services/HomeServices'));
 
 const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
@@ -41,13 +42,12 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
 
             <Hero />
             <Info scrollY={scrollY} />
-            <div style={{ height: '650vh', width: '100%', position: 'relative', zIndex: '-2'}}></div>
-            <AllProjectsButton />
-
+            <Suspense fallback={<div>Loading...</div>}>
+                <Work />
+            </Suspense>
             <Suspense fallback={<div>Loading...</div>}>
                 <HomeServices />
             </Suspense>
-            
             <Reviews />
             <Faqs />
             <Footer />
