@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_02_antino_portfolio_2022=self.webpackChunk_02_antino_portfolio_2022||[]).push([[607],{607:function(n,t,r){r.r(t),r.d(t,{default:function(){return u}});var o=r(184);function u(n){var t=n.src,r=n.alt;return(0,o.jsx)("img",{src:t,alt:r})}}}]);
+//# sourceMappingURL=607.42b700c0.chunk.js.map
