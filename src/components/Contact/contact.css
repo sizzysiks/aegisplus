@@ -26,12 +26,18 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    line-height: 0.8em;
+    line-height: 1em;
     color: var(--font-clr);
 }
 .contact h1 span{
     font-style: italic;
     font-weight: 400;
+}
+
+.contact-btns{
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 .contact-p{
     margin: 0;

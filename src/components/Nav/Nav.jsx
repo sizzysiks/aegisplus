@@ -33,7 +33,7 @@ export default function Nav ({ sidebarIsOpen, setSidebarIsOpen }){
     return(
         <nav className="nav" ref={wrapperRef}>
             <Link to="/" className="logo">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="aegis-logo" width='64' height='64' title="Aegis Plus logo" loading="eager" />
             </Link>
 
             <div className='nav-links'>

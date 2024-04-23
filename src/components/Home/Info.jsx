@@ -27,7 +27,7 @@ export default function Info ({ scrollY }){
     return(
         <div className="info" ref={wrappeRef}>
             <div className="info-content">
-                <p ref={h1Ref} className="page-type">Launch Your Digital Dreams</p>
+                <h2 ref={h1Ref} className="page-type">Launch Your Digital Dreams</h2>
                 <small ref={pRef}>
                     We specialize in crafting distinctive online identities for businesses, ensuring your brand <span>stands out from the crowd</span>. Say goodbye to cookie-cutter websites with countless online duplicates.
                 </small>

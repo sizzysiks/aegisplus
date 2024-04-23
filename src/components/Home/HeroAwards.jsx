@@ -4,7 +4,9 @@ import aw from '../../assets/awards/aw.webp'
 export default function HeroAwards (){
     return(
         <div className="awards">
-            <div className="awards-img"><img src={aw} alt="awwwards" /></div>
+            <div className="awards-img">
+                <img src={aw} alt="awwwards" width='64' height='64' title="Awwwards badge" loading="eager" />
+            </div>
             <div className="awards-div" id="awards-div-1"></div>
             <div className="awards-div" id="awards-div-2"></div>
             <div className="awards-div" id="awards-div-3"></div>

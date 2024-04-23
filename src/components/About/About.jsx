@@ -37,14 +37,15 @@ const About = ({sidebarIsOpen, setSidebarIsOpen}) =>{
         <div className="about">
             <Helmet>
                 <title>Aegis Plus - About</title>
-                <meta name='description' content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team, our commitment to innovation, and how we strive to exceed our clients' expectations. Join us on our journey to transform the digital landscape. Get in touch today!" />
-                <link rel="canonical" href="https://www.aegis.plus/about" />
+                <meta name='description' content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team and our commitment to innovation." />
+                <link rel="canonical" href="/about" />
                 <meta property="og:title" content="Aegis Plus - About" />
-                <meta property="og:description" content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team, our commitment to innovation, and how we strive to exceed our clients' expectations. Join us on our journey to transform the digital landscape. Get in touch today!" />
+                <meta property="og:description" content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team and our commitment to innovation." />
                 <meta property="og:url" content="https://www.aegis.plus/about" />
                 <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://aegis.plus/favicon.ico" />
                 <meta name="twitter:title" content="Aegis Plus - About" />
-                <meta name="twitter:description" content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team, our commitment to innovation, and how we strive to exceed our clients' expectations. Join us on our journey to transform the digital landscape. Get in touch today!" />
+                <meta name="twitter:description" content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team and our commitment to innovation." />
             </Helmet>
 
             <div className="about-overlay" ref={overlayRef}></div>

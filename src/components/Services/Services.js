@@ -5,7 +5,7 @@ import Service from './Service'
 export default function Services (){
     return(
         <section className="services">
-            <h1 className='page-type'>What we do</h1>
+            <h2 className='page-type'>What we do</h2>
 
             <div>
                 {services.map( service => 

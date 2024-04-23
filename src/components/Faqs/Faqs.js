@@ -2,14 +2,14 @@ import { useState } from 'react';
 import './faqs.css'
 
 import Faq from './Faq';
-import FaqQuestion from './FaqQuestion';
+// import FaqQuestion from './FaqQuestion';
 
 export default function Faqs (){
     const [activeFaq, setActiveFaq] = useState(1);
 
     return(
         <section className="faqs">
-            <h1 className='page-type'>What are you curious about?</h1>
+            <h2 className='page-type'>What are you curious about?</h2>
 
             <div className="faqs-container">
                 {faqs.map( faq => <Faq key={faq.id} title={faq.title} text={faq.text} id={faq.id} activeFaq={activeFaq} setActiveFaq={setActiveFaq} />)}

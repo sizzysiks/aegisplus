@@ -54,7 +54,7 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
             </div>
 
             <div className="home-service-link-img" ref={imgRef}>
-                <img src={img} alt="" />
+                <img src={img} alt="web-design-service" width='1920' height='1080' title="Aegis Plus web design services" loading="lazy" />
             </div>
 
             <span className="home-service-link-overlay" ref={overlayRef}></span>

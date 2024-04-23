@@ -118,10 +118,7 @@ export default function WorkCases (){
 
                     <div className="work-case" id="work-case-1" ref={imgRef1} onClick={()=>{ handleClick("luminae") }}>
                         <div className="work-case-img">
-                            <img src={luminae} alt="web-design-case-study-1" id='work-case-img-1' />
-                            {/* <video autoPlay muted loop id='work-case-img-1' alt="web-design-case-study-1">
-                                <source src={luminae} type="video/mp4" />
-                            </video> */}
+                            <img src={luminae} alt="web-design-case-study-1" id='work-case-img-1' width='1080' height='1080' title="Luminae, web design case study" loading="lazy" />
                         </div>
 
                         <div className="work-case-content">
@@ -142,7 +139,7 @@ export default function WorkCases (){
                 <div className="work-cases-row">
                     <div className="work-case" id="work-case-4" ref={imgRef4} onClick={()=>{ handleClick("juubix") }}>
                         <div className="work-case-img">
-                            <img src={case4} id='work-case-img-4' alt="web-design-case-study-4" />
+                            <img src={case4} id='work-case-img-4' alt="web-design-case-study-4" width='737' height='737' title="Juubix, web design case study" loading="lazy" />
                         </div>
 
                         <div className="work-case-content">

@@ -49,15 +49,16 @@ const Contact = ({sidebarIsOpen, setSidebarIsOpen}) =>{
     return(
         <div className="contact">
             <Helmet>
-                <title>Aegis Plus - Contact</title>
-                <meta name='description' content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone, email, or our online contact form. Let us help you bring your digital vision to life. Your success starts here!' />
-                <link rel="canonical" href="https://www.aegis.plus/contact" />
+                <title>Aegis Plus - Contact Us</title>
+                <meta name='description' content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone or email.' />
+                <link rel="canonical" href="/contact" />
                 <meta property="og:title" content="Aegis Plus - Contact" />
-                <meta property="og:description" content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone, email, or our online contact form. Let us help you bring your digital vision to life. Your success starts here!' />
+                <meta property="og:description" content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone or email.' />
                 <meta property="og:url" content="https://www.aegis.plus/contact" />
                 <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://aegis.plus/favicon.ico" />
                 <meta name="twitter:title" content="Aegis Plus - Contact" />
-                <meta name="twitter:description" content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone, email, or our online contact form. Let us help you bring your digital vision to life. Your success starts here!' />
+                <meta name="twitter:description" content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone or email.' />
             </Helmet>
 
             <div className="contact-overlay" ref={overlayRef}></div>
@@ -70,17 +71,19 @@ const Contact = ({sidebarIsOpen, setSidebarIsOpen}) =>{
             
             {/* <ContactForm /> */}
 
-            <div className='contact-alternative'>
-                <Link to="#" className='main-btn' onClick={() => window.location.href='mailto:info@aegis.plus'}>
-                    <span className='main-btn-text'><AiOutlineMail /> info@aegis.plus</span>
-                </Link>
+            <div className="contact-btns">
+                <div className='contact-alternative'>
+                    <Link to="#" className='main-btn' onClick={() => window.location.href='mailto:info@aegis.plus'}>
+                        <span className='main-btn-text'><AiOutlineMail /> info@aegis.plus</span>
+                    </Link>
+                </div>
+                
+                <p ref={subRef} className='contact-p'>or</p>
+
+                <button className='main-btn' onClick={handleCall} style={{ whiteSpace: 'nowrap' }}>
+                    <span className='main-btn-text'><FaPhoneAlt /> Call Us</span>
+                </button>
             </div>
-
-            <p ref={subRef} className='contact-p'>Or</p>
-
-            <button className='main-btn' onClick={handleCall}>
-                <span className='main-btn-text'><FaPhoneAlt /> Call Us</span>
-            </button>
 
             <Footer />
         </div>

@@ -42,21 +42,22 @@ const Projects = ({ sidebarIsOpen, setSidebarIsOpen, data }) =>{
         <div className="projects">
             <Helmet>
                 <title>Aegis Plus - Our work</title>
-                <meta name='description' content="Explore Aegis Plus's diverse portfolio of web design projects. From sleek corporate websites to engaging e-commerce platforms, discover how we blend creativity with functionality to deliver exceptional digital experiences. Get inspired and envision the possibilities for your next project. Contact us to discuss your ideas!" />
-                <link rel="canonical" href="https://www.aegis.plus/projects" />
+                <meta name='description' content="Explore Aegis Plus's diverse portfolio of web design projects. From sleek corporate websites to engaging e-commerce platforms." />
+                <link rel="canonical" href="/projects" />
                 <meta property="og:title" content="Aegis Plus - Our work" />
-                <meta property="og:description" content="Explore Aegis Plus's diverse portfolio of web design projects. From sleek corporate websites to engaging e-commerce platforms, discover how we blend creativity with functionality to deliver exceptional digital experiences. Get inspired and envision the possibilities for your next project. Contact us to discuss your ideas!" />
+                <meta property="og:description" content="Explore Aegis Plus's diverse portfolio of web design projects. From sleek corporate websites to engaging e-commerce platforms." />
                 <meta property="og:url" content="https://www.aegis.plus/projects" />
                 <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://aegis.plus/favicon.ico" />
                 <meta name="twitter:title" content="Aegis Plus - Our work" />
-                <meta name="twitter:description" content="Explore Aegis Plus's diverse portfolio of web design projects. From sleek corporate websites to engaging e-commerce platforms, discover how we blend creativity with functionality to deliver exceptional digital experiences. Get inspired and envision the possibilities for your next project. Contact us to discuss your ideas!" />
+                <meta name="twitter:description" content="Explore Aegis Plus's diverse portfolio of web design projects. From sleek corporate websites to engaging e-commerce platforms." />
             </Helmet>
             
             <div className="projects-overlay" ref={overlayRef}></div>
             <Nav sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} />
             {sidebarIsOpen? <Sidebar /> : ""}
             <div className="projects-content">
-                <h1 ref={titleRef} className='page-type'>Our portfolio</h1>
+                <h1 ref={titleRef} className='page-type'>Explore Our Creative portfolio</h1>
                 <p ref={subRef} className="projects-p">Explore stunning projects in full stack development, frontend design, and 3D innovation.</p>                
                 <div ref={projectsRef} className="projects-links">
                     {data.map( project =>

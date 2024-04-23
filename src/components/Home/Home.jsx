@@ -24,15 +24,16 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
     return(
         <div className="home">
             <Helmet>
-                <title>Aegis Plus - Home</title>
-                <meta name='description' content="Aegis Plus: Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence. Contact us today!" />
+                <title>Aegis Plus - Creative Web Design Studio</title>
+                <meta name='description' content="Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence." />
                 <link rel="canonical" href="https://www.aegis.plus/" />
-                <meta property="og:title" content="Aegis Plus - Home" />
-                <meta property="og:description" content="Aegis Plus: Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence. Contact us today!" />
+                <meta property="og:title" content="Aegis Plus - Creative Web Design Studio" />
                 <meta property="og:url" content="https://www.aegis.plus/" />
                 <meta property="og:type" content="website" />
-                <meta name="twitter:title" content="Aegis Plus - Home" />
-                <meta name="twitter:description" content="Aegis Plus: Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence. Contact us today!" />
+                <meta property="og:image" content="https://aegis.plus/favicon.ico" />
+                <meta property="og:description" content="Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence." />
+                <meta name="twitter:title" content="Aegis Plus - Creative Web Design Studio" />
+                <meta name="twitter:description" content="Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence." />
             </Helmet>
 
             <Projects isMobile={isMobile} />

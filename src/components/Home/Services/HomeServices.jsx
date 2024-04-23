@@ -36,7 +36,7 @@ export default function HomeServices (){
     return(
         <div className="home-services" ref={wrapperRef}>
             <div className="home-services-top">
-                <h1 className='page-type'>Our solutions</h1>
+                <h2 className='page-type'>Our solutions</h2>
             </div>
 
             <div className="home-services-wrapper">

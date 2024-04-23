@@ -6,13 +6,6 @@
     gap: 2em;
     background: var(--bg);
 }
-.reviews h2{
-    font-weight: 500;
-    font-size: 3rem;
-    color: black;
-    line-height: 1em;
-    margin: 0;
-}
 .reviews p{
     color: var(--font-light);
     font-size: 1.2rem;
