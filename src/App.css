@@ -62,7 +62,7 @@ body p, small, span, label{
 }
 
 .page-type{
-  color: var(--font-light);
+  color: var(--font-clr);
   font-size: 100px;
   font-weight: 400;
   line-height: 100px;

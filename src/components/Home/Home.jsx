@@ -8,7 +8,6 @@ import Hero from './Hero'
 import Footer from '../Footer/Footer'
 import Info from './Info'
 import Projects from './Projects/Projects'
-import AllProjectsButton from './AllProjectsButton'
 import Reviews from '../reviews/Reviews'
 import Faqs from '../Faqs/Faqs'
 
@@ -36,7 +35,7 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
                 <meta name="twitter:description" content="Aegis Plus: Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence. Contact us today!" />
             </Helmet>
 
-            <Projects isMobile={isMobile} scrollY={scrollY} />
+            <Projects isMobile={isMobile} />
             <Nav sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} />
             {sidebarIsOpen? <Sidebar /> : ""}
 

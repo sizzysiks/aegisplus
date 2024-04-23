@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './faqs.css'
 
 import Faq from './Faq';
-// import FaqQuestion from './FaqQuestion';
+import FaqQuestion from './FaqQuestion';
 
 export default function Faqs (){
     const [activeFaq, setActiveFaq] = useState(1);
@@ -15,7 +15,7 @@ export default function Faqs (){
                 {faqs.map( faq => <Faq key={faq.id} title={faq.title} text={faq.text} id={faq.id} activeFaq={activeFaq} setActiveFaq={setActiveFaq} />)}
             </div>
 
-            {/* <FaqQuestion /> */}
+            <FaqQuestion />
         </section>
     )
 }

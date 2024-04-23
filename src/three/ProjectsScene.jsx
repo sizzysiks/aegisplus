@@ -8,13 +8,13 @@ import PhysicsWorld from "./PhysicsWorld"
  
 THREE.ColorManagement.legacyMode = false
 
-export default function ProjectsScene ({ isMobile, scrollY}){
+export default function ProjectsScene ({ isMobile }){
     return(
         <Canvas 
             camera={{ rotation: [0, 0, isMobile? Math.PI * 0.1: 0.1], position: [0, 0, isMobile? 4.9: 4.87] }}
             onCreated={(state) => (state.gl.toneMappingExposure = 1.3)}
         >
-            <Background scrollY={scrollY} />
+            <Background />
             <PhysicsWorld />
             <Lights />
 

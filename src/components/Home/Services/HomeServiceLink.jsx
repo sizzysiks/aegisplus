@@ -20,14 +20,14 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
     useGSAP(() => {
         gsap.fromTo(
             imgRef.current,
-            { clipPath: 'polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)' },
+            { y: 50 },
             {
-                clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                y: 0,
                 duration: 1,
                 ease: "expo.out",
                 scrollTrigger: {
                     trigger: imgRef.current,
-                    start: "top 100%",
+                    start: "top 80%",
                     end: "bottom 0%",
                     toggleActions: "play none play reverse",
                 }

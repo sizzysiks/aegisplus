@@ -51,7 +51,6 @@
     background: transparent;
     transition: all 0.3s;
     cursor: pointer;
-    transform-origin: bottom;
 }
 .home-service-link:nth-child(4){
     border-radius: 0 0 var(--div-radius) var(--div-radius);

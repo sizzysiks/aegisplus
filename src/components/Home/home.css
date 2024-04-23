@@ -34,11 +34,11 @@
 }
 .hero h1{
     position: relative;
-    color: var(--font-light);
-  font-size: 100px;
-  font-weight: 400;
-  line-height: 100px;
-  text-transform: uppercase;
+    color: var(--font-clr);
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 100px;
+    text-transform: uppercase;
 }
 .hero h1 span{
     font-weight: 600;
