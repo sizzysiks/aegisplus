@@ -48,22 +48,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 2em;
     padding: 4em 8em;
-}
-.not-found h1{
-    font-size: 5rem;
-    color: var(--font-clr);
-    line-height: 0.9em;
-    font-weight: 500;
+    background: var(--bg);
 }
 .not-found p{
-    color: var(--font-clr);
-    font-size: 1.5rem;
+    color: var(--font-light);
+    text-align: left;
+    line-height: 1.5em;
+    width: 50%;
 }
 .not-found span{
-    font-size: 5rem;
+    color: var(--blue);
+}
+.not-found-link{
+    color: var(--blue);
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */
@@ -76,6 +76,13 @@
 @media only screen and (max-width: 480px){
     .terms-wrapper{
         padding: 8em 1em 1em 1em;
+    }
+
+    .not-found{
+        padding: 4em 1em;
+    }
+    .not-found p{
+        width: 100%;
     }
 }
 

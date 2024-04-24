@@ -9,6 +9,7 @@ import Nav from "../Nav/Nav"
 import Sidebar from '../Sidebar/Sidebar'
 import Footer from '../Footer/Footer'
 import NextProjectButton from './NextProjectButton'
+import NotFound from '../../pages/NotFound'
 
 const LazyLoadedImage = lazy(() => import('../../common/LazyImage'));
 const LazyLoadedVideo = lazy(() => import('../../common/LazyVideo'));
@@ -48,7 +49,7 @@ const Project = ({ data, sidebarIsOpen, setSidebarIsOpen }) =>{
         gsap.fromTo(subRef.current, {y: 500}, {delay:1.2, duration:0.3, y:0, ease: "expo.out"})
     }, { dependencies: [currentProject, id] })
 
-    if(!currentProject) return null
+    if(!currentProject) return <NotFound />
 
     return(
         <div className="project">
