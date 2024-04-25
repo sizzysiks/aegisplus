@@ -37,7 +37,7 @@ const Sidebar = () =>{
                     >
                         INSTAGRAM
                     </a>
-                    <Link to="#" className='sidebar-socials-link'>X</Link>
+                    {/* <Link to="#" className='sidebar-socials-link'>X</Link> */}
                 </div>
 
                 <Link to="#" className='sidebar-socials-link' onClick={() => window.location.href='mailto:info@aegis.plus'}>

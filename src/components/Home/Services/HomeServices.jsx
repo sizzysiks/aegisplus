@@ -5,7 +5,7 @@ import './services.css'
 
 import HomeServiceLink from './HomeServiceLink';
 
-import img1 from '../../../assets/services/serv1.webp'
+import img1 from '../../../assets/services/serv1.png'
 import img2 from '../../../assets/services/serv2.webp'
 import img3 from '../../../assets/services/serv3.webp'
 import img4 from '../../../assets/services/serv4.webp'

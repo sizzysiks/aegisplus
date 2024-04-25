@@ -1,4 +1,4 @@
-import { useEffect, lazy, Suspense } from 'react'
+import { useEffect, lazy, Suspense,useRef } from 'react'
 import { Helmet } from 'react-helmet-async'
 import './home.css'
 
@@ -15,14 +15,31 @@ const Work = lazy(() => import('./Work/Work'))
 const HomeServices = lazy(() => import('./Services/HomeServices'));
 
 const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
+    const containerRef = useRef(null)
+
     // Close sidebar
     useEffect(()=>{
         setSidebarIsOpen(false)
         // eslint-disable-next-line
     },[])
 
+    // useGSAP(()=>{
+    //     const height = containerRef.current.clientHeight;
+    //     document.body.style.height = height + "px";
+
+    //     gsap.to(containerRef.current, {
+    //         y: -(height - document.documentElement.clientHeight),
+    //         scrollTrigger: {
+    //           trigger: document.body,
+    //           start: "top top",
+    //           end: "bottom bottom",
+    //           scrub: 1
+    //         }
+    //       });
+    // }, { dependencies: [] })
+
     return(
-        <div className="home">
+        <div className="home" ref={containerRef}>
             <Helmet>
                 <title>Aegis Plus - Creative Web Design Studio</title>
                 <meta name='description' content="Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence." />

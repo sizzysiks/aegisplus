@@ -80,19 +80,21 @@
 
 .home-service-link-content{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 }
 .home-service-link-content > div{
     width: 80%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 2em;
 }
 .home-service-link-p{
     color: white;
     font-size: 3rem;
     font-weight: 500;
     user-select: none;
+    line-height: 1em;
     width: 40%;
 }
 .home-service-link-small{
@@ -151,7 +153,11 @@
     }
     .home-service-link{
         padding: 2em;
-    }.home-service-link-content > div{
+    }
+    .home-service-link-content{
+        align-items: flex-start;
+    }
+    .home-service-link-content > div{
         flex-direction: column;
         gap: 1em;
     }

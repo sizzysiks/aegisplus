@@ -11,6 +11,8 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
     const overlayRef = useRef(null);
     const linkRef = useRef(null);
     const imgRef = useRef(null);
+    const titleRef = useRef(null);
+    const textRef = useRef(null);
 
 
     const handleClick = () =>{
@@ -18,20 +20,55 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
     }
 
     useGSAP(() => {
+            gsap.fromTo(
+                titleRef.current,
+                { clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' },
+                {
+                    clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                    duration: 0.5,
+                    ease: "expo.out",
+                    scrollTrigger: {
+                        trigger: linkRef.current,
+                        start: "top 80%",
+                        end: "bottom 0%",
+                        // scrub: true,
+                        toggleActions: "play none play reverse",
+                    }
+                }
+            );
+        
+            gsap.fromTo(
+                textRef.current,
+                { clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' },
+                {
+                    clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                    duration: 0.5,
+                    ease: "expo.out",
+                    scrollTrigger: {
+                        trigger: linkRef.current,
+                        start: "top 80%",
+                        end: "bottom 0%",
+                        // scrub: true,
+                        toggleActions: "play none play reverse",
+                    }
+                }
+            );
+
         gsap.fromTo(
             imgRef.current,
-            { y: 50 },
-            {
-                y: 0,
-                duration: 1,
-                ease: "expo.out",
-                scrollTrigger: {
-                    trigger: imgRef.current,
-                    start: "top 80%",
-                    end: "bottom 0%",
-                    toggleActions: "play none play reverse",
+            { clipPath: 'polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)' },
+                {
+                    clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                    duration: 0.5,
+                    ease: "expo.out",
+                    scrollTrigger: {
+                        trigger: linkRef.current,
+                        start: "top 80%",
+                        end: "bottom 0%",
+                        // scrub: true,
+                        toggleActions: "play none play reverse",
+                    }
                 }
-            }
         );
     }, { dependencies: [] });
 
@@ -46,8 +83,8 @@ export default function HomeServiceLink ({ title, explanation, img, color }){
 
             <div className="home-service-link-content">
                 <div>
-                    <p className="home-service-link-p">{title}</p>
-                    <small className="home-service-link-small">{explanation}</small>
+                    <p className="home-service-link-p" ref={titleRef}>{title}</p>
+                    <small className="home-service-link-small" ref={textRef}>{explanation}</small>
                 </div>
     
                 <span className="home-service-link-btn"><IoArrowForwardSharp /></span>

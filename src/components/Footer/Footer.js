@@ -31,24 +31,22 @@ const Footer = () =>{
 
             <div className="footer-bottom">
                 <div className="footer-copyright">
-                    <p>Copyright</p>
                     <AiOutlineCopyrightCircle />
                     <p>{year} Aegis Web Designs Ltd. All rights reserved.</p>
                 </div>
 
                 <div className="footer-socials">
-                    <p className='footer-socials-p'>Our socials: </p>
                     <a 
                         className='footer-top-link footer-bottom-link' 
                         href="https://www.instagram.com/aegisimmersive/" 
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Instagram
+                        Instagram 
                     </a>
-                    <Link to="#" className='footer-top-link footer-bottom-link'>X</Link>
+                    {/* <Link to="#" className='footer-top-link footer-bottom-link'>X</Link> */}
                     <Link to="#" className='footer-top-link footer-bottom-link' onClick={() => window.location.href='mailto:info@aegis.plus'}>
-                        info@aegis.plus
+                        info@aegis.plus 
                     </Link>
                 </div>
             </div>

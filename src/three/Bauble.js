@@ -10,12 +10,15 @@ export default function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.Mat
   const api = useRef()
   useFrame((state, delta) => {
     delta = Math.min(0.1, delta)
-    api.current.applyImpulse(
-      vec
-        .copy(api.current.translation())
-        .normalize()
-        .multiply({ x: -50 * delta * scale, y: -150 * delta * scale, z: -50 * delta * scale }),
-    )
+
+    if(api.current){
+      api.current.applyImpulse(
+        vec
+          .copy(api.current.translation())
+          .normalize()
+          .multiply({ x: -50 * delta * scale, y: -150 * delta * scale, z: -50 * delta * scale }),
+      )
+    }
   })
 
   return (
