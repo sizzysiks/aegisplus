@@ -6,6 +6,10 @@ import './reviews.css'
 import img1 from '../../assets/reviews/review1.webp'
 import img2 from '../../assets/reviews/review3.webp'
 
+import { BiLike } from "react-icons/bi";
+import { IoChatbubbleOutline } from "react-icons/io5";
+import { IoSendOutline } from "react-icons/io5";
+
 import Button from '../../common/Button'
 
 export default function Reviews (){
@@ -54,23 +58,48 @@ export default function Reviews (){
             <div className="reviews-cards">
                 <div className="card" ref={ref1}>
                     <span className='pin'></span>
+                    <div className="card-header">
+                        <div className='card-header-profile' id='card-header-orng'>A</div>
+                        <div>
+                            <p>Aida V. <span>CEO, OnSolutions</span></p>
+                            <small>Tirana, Albania</small>
+                        </div>
+                    </div>
                     <div className="card-top">
                         <div className="card-img">
                             <img src={img1} alt="aegis-review-aida" width='1500' height='1080' title="Aegis Plus review, by Aida V." loading="lazy" />
                         </div>
                     </div>
-                    <p>Aida V. <span>CEO, OnSolutions</span></p>
-                    <small>Their team's creativity and attention to detail brought our vision to life seamlessly. The website they designed exceeded our expectations, and our online presence has never been stronger. Thank you for your professionalism and dedication to our project.</small>
+                    <div className="card-icons">
+                        <BiLike />
+                        <IoChatbubbleOutline />
+                        <IoSendOutline />
+                    </div>
+                    <small>Their team's creativity and attention to detail brought our vision to life seamlessly. 
+                        The website they designed exceeded our expectations, and our online presence has never been stronger. 
+                        Thank you for your professionalism and dedication to our project.
+                    </small>
                 </div>
 
                 <div className="card" ref={ref2}>
                     <span className='pin'></span>
+                    <div className="card-header">
+                        <div className='card-header-profile' id='card-header-blue'>S</div>
+                        <div>
+                            <p>Susan F. <span>CEO, Juubix</span></p>
+                            <small>London, UK</small>
+                        </div>
+                    </div>
                     <div className="card-top">
                         <div className="card-img">
                             <img src={img2} alt="aegis-review-susan" width='1500' height='1080' title="Aegis Plus review, by Susan F." loading="lazy" />
                         </div>
                     </div>
-                    <p>Susan F. <span>CEO, Juubix</span></p>
+                    <div className="card-icons">
+                        <BiLike />
+                        <IoChatbubbleOutline />
+                        <IoSendOutline />
+                    </div>
                     <small>From the initial consultation to the final launch, they were responsive, collaborative, and committed to delivering a site that truly reflects our brand. We've received countless compliments on the design and functionality, and our online traffic has increased greatly!</small>
                 </div>
             </div>

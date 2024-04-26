@@ -123,7 +123,6 @@
 
 .home-service-link-img{
     width: 100%;
-    height: 500px;
     overflow: hidden;
     border-radius: var(--div-radius);
     transform-origin: left bottom;

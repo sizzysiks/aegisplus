@@ -21,8 +21,10 @@
 .reviews-cards{
     width: 100%;
     display: flex;
-    gap: 1em;
+    gap: 2em;
 }
+
+
 .card{
     width: 50%;
     height: max-content;
@@ -48,6 +50,41 @@
     border-radius: 50%;
     background: var(--bg);
 }
+.card-header{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.card-header-profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card-header-orng{
+    background: var(--orng);
+    box-shadow:  5px 5px 11px #c85316,
+    -5px -5px 11px #ff7f22;
+}
+#card-header-blue{
+    background: var(--blue);
+    box-shadow:  5px 5px 11px #0051c9,
+             -5px -5px 11px #007bff;
+}
+.card-header > div:nth-child(2) p{
+    font-size: 1.2rem;
+    line-height: 1em;
+    margin: 0;
+    color: white;
+}
+.card-header > div:nth-child(2) small{
+    font-size: 14px;
+    color: rgb(232, 232, 232);
+    margin: 0;
+}
+
 .card-top{
     display: flex;
     align-items: center;
@@ -69,14 +106,14 @@
     object-fit: contain;
 }
 
-.card p{
-    font-size: 1.5rem;
+.card-icons{
+    display: flex;
+    align-items: center;
+    gap: 1em;
     color: white;
 }
-.card:nth-child(2) p, .card:nth-child(2) small{
-    color: white;
-}
-.card small{
+
+.card > small{
     color: white;
     font-size: 1rem;
     line-height: 1.5em;
