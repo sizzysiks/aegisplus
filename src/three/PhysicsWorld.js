@@ -6,14 +6,13 @@ import { Physics, RigidBody, BallCollider } from "@react-three/rapier"
 import BaubleColor from "./BaubleColor"
 import Bauble from './Bauble'
 
-const baubles = [...Array(12)].map(() => ({ scale: [1, 1, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
+const baubles = [...Array(10)].map(() => ({ scale: [1, 1, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
 
 const PhysicsWorld = () =>{
     return(
         <Physics gravity={[0, 0, 0]}>
             <Pointer />
             {baubles.map((props, i) => <Bauble key={i} {...props} />)}
-            {/* <BaubleColor color='#ff00d4' /> */}
             <BaubleColor color='#0062ff' />
             <BaubleColor color='#ff4d00' />
             <BaubleColor color='#11ae00' />

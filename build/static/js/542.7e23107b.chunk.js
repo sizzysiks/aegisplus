@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_02_antino_portfolio_2022=self.webpackChunk_02_antino_portfolio_2022||[]).push([[542],{2542:(o,e,r)=>{r.r(e),r.d(e,{default:()=>a});var t=r(184);function a(o){let{src:e,alt:r}=o;return(0,t.jsx)("div",{className:"project-video-wrapper",children:(0,t.jsx)("video",{src:e,autoPlay:!0,loop:!0})})}}}]);
+//# sourceMappingURL=542.7e23107b.chunk.js.map

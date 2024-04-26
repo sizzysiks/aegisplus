@@ -8,11 +8,11 @@ import Hero from './Hero'
 import Footer from '../Footer/Footer'
 import Info from './Info'
 import Projects from './Projects/Projects'
-import Reviews from '../reviews/Reviews'
 import Faqs from '../Faqs/Faqs'
 
 const Work = lazy(() => import('./Work/Work'))
 const HomeServices = lazy(() => import('./Services/HomeServices'));
+const Reviews = lazy(() => import('../reviews/Reviews'))
 
 const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
     const containerRef = useRef(null)
@@ -65,7 +65,9 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
             <Suspense fallback={<div>Loading...</div>}>
                 <HomeServices />
             </Suspense>
-            <Reviews />
+            <Suspense fallback={<div>Loading...</div>}>
+                <Reviews />
+            </Suspense>
             <Faqs />
             <Footer />
         </div>
