@@ -53,11 +53,11 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
                 <meta name="twitter:description" content="Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence." />
             </Helmet>
 
-            <Projects isMobile={isMobile} />
+            <Projects isMobile={isMobile} scrollY={scrollY } />
             <Nav sidebarIsOpen={sidebarIsOpen} setSidebarIsOpen={setSidebarIsOpen} />
             {sidebarIsOpen? <Sidebar /> : ""}
 
-            <Hero />
+            <Hero isMobile={isMobile} />
             <Info scrollY={scrollY} />
             <Suspense fallback={<div>Loading...</div>}>
                 <Work />

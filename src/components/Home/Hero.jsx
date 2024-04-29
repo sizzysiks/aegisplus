@@ -6,7 +6,7 @@ import HeroAwards from "./HeroAwards";
 
 const words = ['design', 'develop', 'deploy'];
 
-const HeroTitle = () => {
+const HeroTitle = ({ isMobile }) => {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const titleRef = useRef(null);
 
@@ -21,10 +21,10 @@ const HeroTitle = () => {
         return () => clearInterval(interval);
     }, []);
 
-  return <h1>We <span ref={titleRef}>{words[currentWordIndex]}</span><br></br>web solutions</h1>;
+  return <h1>We <span ref={titleRef}>{words[currentWordIndex]}</span><br></br>{isMobile? "": "web"} solutions</h1>;
 };
 
-export default function Hero (){
+export default function Hero ({ isMobile }){
     const h1Ref = useRef(null);
     const pRef = useRef(null);
     const btnRef = useRef(null);
@@ -85,7 +85,7 @@ export default function Hero (){
     return(
         <section className="hero">
             <div className="hero-content">
-                <HeroTitle />
+                <HeroTitle isMobile={isMobile} />
                 <p ref={pRef}>Unleash the potential of your business with <span id="hero-span-2">expert design</span>, captivating your audience and <span id="hero-span-3">maximizing engagement</span>.</p>
                 <HeroAwards />
             </div>

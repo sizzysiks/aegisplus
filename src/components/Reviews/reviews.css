@@ -43,8 +43,8 @@
 }
 .pin{
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 3em;
+    right: 2em;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -56,12 +56,13 @@
     gap: 1em;
 }
 .card-header-profile{
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 #card-header-orng{
     background: var(--orng);
@@ -111,6 +112,9 @@
     align-items: center;
     gap: 1em;
     color: white;
+}
+.card-icons span{
+    font-size: 1.5rem;
 }
 
 .card > small{

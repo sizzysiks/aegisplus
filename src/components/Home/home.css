@@ -283,12 +283,13 @@
         line-height: 55px;
         white-space: wrap;
         text-align: left;
+        font-weight: 500;
     }
     .hero p{
         width: 100%;
         text-align: left;
-        font-size: 19px;
-        line-height: 27px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .award{
         width: 60px;

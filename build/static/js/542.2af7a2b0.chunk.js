@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkaegis_plus_studio=self.webpackChunkaegis_plus_studio||[]).push([[542],{2542:(s,e,a)=>{a.r(e),a.d(e,{default:()=>l});var u=a(184);function l(s){let{src:e,alt:a}=s;return(0,u.jsx)("div",{className:"project-video-wrapper",children:(0,u.jsx)("video",{src:e,autoPlay:!0,loop:!0})})}}}]);
+//# sourceMappingURL=542.2af7a2b0.chunk.js.map
