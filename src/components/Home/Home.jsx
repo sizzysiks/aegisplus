@@ -1,4 +1,4 @@
-import { useEffect, lazy, Suspense,useRef } from 'react'
+import { useEffect, lazy, Suspense, useRef } from 'react'
 import { Helmet } from 'react-helmet-async'
 import './home.css'
 
@@ -22,21 +22,6 @@ const Home = ({ isMobile, sidebarIsOpen, setSidebarIsOpen, scrollY }) =>{
         setSidebarIsOpen(false)
         // eslint-disable-next-line
     },[])
-
-    // useGSAP(()=>{
-    //     const height = containerRef.current.clientHeight;
-    //     document.body.style.height = height + "px";
-
-    //     gsap.to(containerRef.current, {
-    //         y: -(height - document.documentElement.clientHeight),
-    //         scrollTrigger: {
-    //           trigger: document.body,
-    //           start: "top top",
-    //           end: "bottom bottom",
-    //           scrub: 1
-    //         }
-    //       });
-    // }, { dependencies: [] })
 
     return(
         <div className="home" ref={containerRef}>

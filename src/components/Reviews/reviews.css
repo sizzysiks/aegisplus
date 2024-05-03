@@ -8,8 +8,8 @@
 }
 .reviews p{
     color: var(--font-light);
-    font-size: 1.2rem;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 24px;
 }
 .reviews p span{
     font-size: 1rem;
@@ -119,8 +119,8 @@
 
 .card > small{
     color: white;
-    font-size: 1rem;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .reviews-bottom{

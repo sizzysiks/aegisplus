@@ -68,7 +68,7 @@ const services = [
             "Search engine optimization (SEO)",
             "Hosting and domain setup"
         ],
-        color: '#5D96B4',
+        color: '#579EB6',
         id: 1,
     },
     {
@@ -83,7 +83,7 @@ const services = [
             "Integration with third-party tools",
             "Ongoing maintenance and support services"
         ],
-        color: '#AA7BBD',
+        color: '#79555D',
         id: 2,
     },
     {

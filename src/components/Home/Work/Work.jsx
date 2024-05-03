@@ -5,7 +5,7 @@ import WorkCases from './WorkCases'
 
 export default function Work (){
     return(
-        <div>
+        <div className='work-section'>
             <div className="work-top">
                 <h2 className='page-type'>Our case studies</h2>
                 <p>Each project is a testament to our commitment to excellence, creativity, and client satisfaction. Explore our case studies below to discover how we transformed ideas into tangible digital realities.</p>

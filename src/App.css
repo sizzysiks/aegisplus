@@ -60,9 +60,9 @@ body p, small, span, label{
 
 .page-type{
   color: var(--font-clr);
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 400;
-  line-height: 100px;
+  line-height: 88px;
   text-transform: uppercase;
 }
 

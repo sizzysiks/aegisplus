@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+// import FaqDecoration from "./FaqDecoration";
 
 export default function Faq ({ title, text, id, activeFaq, setActiveFaq }){
     const ref = useRef(null);
@@ -8,7 +9,7 @@ export default function Faq ({ title, text, id, activeFaq, setActiveFaq }){
     useGSAP(() => {
         gsap.fromTo(
             ref.current,
-            { y: 20, scaleX: 0.95 },
+            { y: 20, scaleX: 1 },
             {
                 y: 0,
                 scaleX: 1,
@@ -26,10 +27,13 @@ export default function Faq ({ title, text, id, activeFaq, setActiveFaq }){
 
     return(
         <div ref={ref} className={`${activeFaq === id? "faq-active": "faq"}`} onClick={()=>{ setActiveFaq(id) }}>
+            {/* {activeFaq === id? <FaqDecoration />: ""} */}
+
             <span>
                 <div className='plus-line'></div>
                 <div className={`${activeFaq === id? "plus-line": "plus-line-hidden"}`}></div>
             </span>
+            
             <div>
                 <p>{title}</p>
                 {activeFaq === id? 

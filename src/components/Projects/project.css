@@ -158,7 +158,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--radius);
+    border-radius: var(--div-radius);
 }
 .project-imgs-wrapper div{
     width: 100%;
@@ -245,14 +245,14 @@
         height: 350px;
     }
     .project-imgs-wrapper{
-        padding: 1em;
+        padding: 1em 0;
     }
     .project-prev-btn, .project-next-btn{
         font-size: 1rem;
     }
     .project-imgs-wrapper div{
         width: 100%;
-        height: 350px;
+        height: max-content;
     }
 }
 @media screen and (min-width: 1440px) {

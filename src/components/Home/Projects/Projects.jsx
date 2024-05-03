@@ -1,11 +1,11 @@
 import './projects.css'
 
-import ProjectsScene from "../../../three/ProjectsScene";
+import Experience from "../../../three/Experience";
 
 export default function Projects ({ isMobile, scrollY }){
     return(
         <div className="projects-canvas">
-            <ProjectsScene isMobile={isMobile} scrollY={scrollY} />
+            <Experience isMobile={isMobile} scrollY={scrollY} />
         </div>
     )
 }
