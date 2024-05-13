@@ -1,0 +1,162 @@
+.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background: black;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    padding: 4em 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.hero-content h1{
+    position: relative;
+    z-index: 2;
+    font-size: 95px;
+    line-height: 98px;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+}
+#hero-span{
+    font-style: italic;
+    font-weight: 200;
+}
+.hero-content p{
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    line-height: 24px;
+    width: 45%;
+    margin: 0;
+    color: white;
+
+}
+
+
+/* Awards section */
+.awards{
+    width: max-content;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.awards-img, .awards-div{
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+.awards-img{
+    z-index: 4;
+}
+.awards-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#awards-div-1{
+    z-index: 3;
+    background: var(--blue);
+    transform: translateX(-25px);
+}
+#awards-div-2{
+    z-index: 2;
+    background: var(--orng);
+    transform: translateX(-50px);
+}
+#awards-div-3{
+    background: var(--grn);
+    transform: translateX(-75px);
+}
+.awards small{
+    color: white;
+    transform: translateX(-60px);
+    font-size: 14px;
+    white-space: nowrap;
+}
+.award{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(25%);
+    width: 100px;
+    height: 100px;
+}
+.award img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.view-work{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 8em;
+    padding-top: 4em; */
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 980px){
+    .hero{
+        padding: 2em;
+        padding-top: 8em;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .hero{
+        padding: 4em 1em;
+        justify-content: flex-end;
+        padding-bottom: calc(4em + 50px);
+    }
+    .hero-content h1{
+        font-size: 52px;
+        line-height: 56px;
+    }
+    .hero-content p{
+        width: 100%;
+    }
+
+    .view-work{
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero{
+        padding: 4em 16em;
+
+    }
+    .hero p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .view-work{
+        padding: 1em;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+}

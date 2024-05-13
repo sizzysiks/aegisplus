@@ -1,0 +1,118 @@
+/* Info */
+.info{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    padding: 4em 8em;
+}
+.info-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    border-radius: var(--div-radius);
+}
+.info-content h2{
+    color: white;
+}
+#info-dont{
+    color: white;
+    font-weight: 300;
+}
+.info-content small{
+    color: white;
+    width: 60%;
+    font-size: 16px;
+    line-height: 24px;
+    align-self: flex-end;
+}
+.info-content small span{
+    font-weight: 700;
+    text-decoration: underline;
+}
+#info-arrow{
+    position: absolute;
+    bottom: 0;
+    font-size: 5rem;
+    animation: moveUpDown 1s infinite alternate;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px); /* Change the distance of movement as needed */
+    }
+}
+
+.info-badges{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.info-badges > div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.info-badges img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 980px){
+    .info, .pre-projects{
+        padding: 4em 0em;
+        justify-content: flex-end;
+    }
+    .info-content{
+        padding: 2em;
+    }
+    .info p{
+        font-size: 50px;
+        line-height: 55px;
+        white-space: wrap;
+    }
+    .info small{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .info, .pre-projects{
+        padding: 4em 1em;
+        justify-content: center;
+    }
+    .info p{
+        font-size: 50px;
+        line-height: 55px;
+        white-space: wrap;
+    }
+    .info small{
+        width: 100%;
+    }
+    .info-content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .info{
+        padding: 8em;
+    }
+    .info-content{
+        padding: 8em;
+    }
+    .info small{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

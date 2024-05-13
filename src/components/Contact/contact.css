@@ -1,0 +1,204 @@
+.contact{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background: var(--bg);
+    padding-top: 8em;
+}
+.contact-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--orange);
+    z-index: 20;
+}
+
+.contact h1{
+    font-size: 7rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    color: var(--font-clr);
+}
+.contact h1 span{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contact-btns{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.contact-p{
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    color: var(--font-light);
+}
+
+
+
+
+#contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3em;
+}
+#contact-form div{
+    width: 100%;
+    display: flex;
+    gap: 0.5em;
+}
+.contact-name-input-wrapper{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+    /* border-bottom: 1px solid var(--orange); */
+}
+.contact-name-input-wrapper:focus-within{
+    background: var(--orange);
+}
+
+.contact-name-input{
+    width: 90%;
+}
+#contact-form input{
+    background: transparent;
+    height: 3em;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--orange);
+    border-radius: var(--radius);
+    color: var(--orange);
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 1.5em;
+}
+#contact-form input:focus{
+    color: var(--blue-dark);
+}
+#contact-form input:-webkit-autofill,
+#contact-form input:-webkit-autofill:hover, 
+#contact-form input:-webkit-autofill:focus, 
+#contact-form input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--orange) inset !important;
+    -webkit-text-fill-color: var(--blue-dark) !important;
+}
+#contact-form textarea{
+    height: 3em;
+    width: 100%;
+    height: 10em;
+    outline: none;
+    border: 1px solid var(--orange);
+    border-radius: var(--radius);
+    background: transparent;
+    border-bottom: 1px solid var(--orange);
+    color: var(--orange);
+    color: var(--orange);
+    font-size: 1.1rem;
+    padding: 1.5em;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+}
+#contact-form textarea:focus{
+    background: var(--orange);
+    color: var(--blue-dark);
+}
+
+.contact-btn{
+    width: 100%;
+    text-decoration: none;
+    color: var(--blue-dark);
+    border: 1px solid var(--orange);
+    border-radius: var(--radius);
+    background: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.contact-btn:hover{
+    background: var(--blue-dark);
+    color: var(--orange);
+}
+.contact-btn-sent{
+    width: 100%;
+    text-decoration: none;
+    color: var(--blue-dark);
+    border: 1px solid rgb(31, 255, 31);
+    border-radius: var(--radius);
+    background: rgb(31, 255, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-details{
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: var(--blue);
+}
+.contact-details div{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.contact-details div span{
+    color: var(--blue);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 480px){
+    .contact h1{
+        width: 90%;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .contact-p{
+        width: 90%;
+    }
+    #contact-form{
+        width: 90%;
+    }
+    .contact-email{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .contact{
+        padding-top: 16em;
+    }
+}
