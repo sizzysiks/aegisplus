@@ -51,10 +51,10 @@ const Contact = ({sidebarIsOpen, setSidebarIsOpen}) =>{
             <Helmet>
                 <title>Aegis Plus - Contact Us</title>
                 <meta name='description' content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone or email.' />
-                <link rel="canonical" href="/contact" />
+                <link rel="canonical" href="https://aegis.plus/contact" />
                 <meta property="og:title" content="Aegis Plus - Contact" />
                 <meta property="og:description" content='Contact Aegis Plus today for expert web design services and personalized support. Reach out to us via phone or email.' />
-                <meta property="og:url" content="https://www.aegis.plus/contact" />
+                <meta property="og:url" content="https://aegis.plus/contact" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://aegis.plus/favicon.ico" />
                 <meta name="twitter:title" content="Aegis Plus - Contact" />

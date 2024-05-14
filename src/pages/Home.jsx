@@ -33,9 +33,9 @@ export default function Home ({ sidebarIsOpen, setSidebarIsOpen }){
             <Helmet>
                 <title>Aegis Plus - Creative Web Design Studio</title>
                 <meta name='description' content="Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence." />
-                <link rel="canonical" href="https://www.aegis.plus/" />
+                <link rel="canonical" href="https://aegis.plus/" />
                 <meta property="og:title" content="Aegis Plus - Creative Web Design Studio" />
-                <meta property="og:url" content="https://www.aegis.plus/" />
+                <meta property="og:url" content="https://aegis.plus/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://aegis.plus/favicon.ico" />
                 <meta property="og:description" content="Leading web design studio in Leicester. We specialize in innovative web solutions for businesses. Explore our portfolio and services to elevate your online presence." />

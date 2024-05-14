@@ -61,10 +61,10 @@ const Project = ({ data, sidebarIsOpen, setSidebarIsOpen }) =>{
             <Helmet>
                 <title> Aegis Plus - {currentProject.title}</title>
                 <meta name='description' content="Discover how Aegis Plus transformed their presence with a sleek and user-friendly website. Explore the stunning design, seamless navigation, and innovative features." />
-                <link rel="canonical" href="https://www.aegis.plus/projects" />
+                <link rel="canonical" href="https://aegis.plus/projects" />
                 <meta property="og:title" content="Aegis Plus - Our client work" />
                 <meta property="og:description" content="Discover how Aegis Plus transformed their presence with a sleek and user-friendly website. Explore the stunning design, seamless navigation, and innovative features." />
-                <meta property="og:url" content="https://www.aegis.plus/projects" />
+                <meta property="og:url" content="https://aegis.plus/projects" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://aegis.plus/favicon.ico" />
                 <meta name="twitter:title" content="Aegis Plus - Our client work" />

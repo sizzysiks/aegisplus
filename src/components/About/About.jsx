@@ -39,10 +39,10 @@ const About = ({sidebarIsOpen, setSidebarIsOpen}) =>{
             <Helmet>
                 <title>Aegis Plus - About</title>
                 <meta name='description' content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team and our commitment to innovation." />
-                <link rel="canonical" href="/about" />
+                <link rel="canonical" href="https://aegis.plus/about" />
                 <meta property="og:title" content="Aegis Plus - About" />
                 <meta property="og:description" content="Discover the story behind Aegis Plus - a leading web design studio in Leicester. Learn about our passionate team and our commitment to innovation." />
-                <meta property="og:url" content="https://www.aegis.plus/about" />
+                <meta property="og:url" content="https://aegis.plus/about" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="https://aegis.plus/favicon.ico" />
                 <meta name="twitter:title" content="Aegis Plus - About" />
