@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/607.dd8ea007.chunk.js","mappings":"+JAAe,SAASA,EAAS,GAAgB,IAAd,IAAEC,EAAG,IAAEC,GAAK,EAC3C,OAAO,gBAAKD,IAAKA,EAAKC,IAAKA,GAC/B,C","sources":["common/LazyImage.jsx"],"sourcesContent":["export default function LazyImage ({ src, alt }){\r\n    return <img src={src} alt={alt} />;\r\n}"],"names":["LazyImage","src","alt"],"sourceRoot":""}
